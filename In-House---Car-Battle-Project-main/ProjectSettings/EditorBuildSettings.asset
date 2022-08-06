@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Preloader.unity
+    guid: a332dc2de1fcf534c9a648289dbb069d
+  - enabled: 1
+    path: Assets/Scenes/ArmoryShop.unity
+    guid: 6095f9a779ea6cb4f8974af09ff2eae8
+  - enabled: 1
+    path: Assets/Scenes/GamePlay_NoMountains.unity
+    guid: 66ce243e4aaa1784987b1a6529b90552
+  m_configObjects: {}

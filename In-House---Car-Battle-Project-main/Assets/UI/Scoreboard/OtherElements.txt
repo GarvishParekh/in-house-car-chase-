@@ -1,0 +1,15 @@
+- WindowPanelBig_BG 
+	from Settings\
+
+- TopBar_BG, Coin_Icon, CoinPanel_BG 
+	from MainScreen\TopBar
+
+- Home_Icon
+	from Pause\
+
+- Resume_Icon
+	from Pause\
+
+- SidePanel_Button and SidePanel_Button_Pressed 
+	from MainScreen\SidePanel\
+

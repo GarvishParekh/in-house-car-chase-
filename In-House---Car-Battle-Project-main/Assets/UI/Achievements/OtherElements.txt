@@ -1,0 +1,12 @@
+- SidePanelBack_Button and SidePanelBack_Button_Pressed 
+	from \MainScreen\SidePanel\ 
+
+- CustomizeColorSelected_Icon 
+	from \MainScreen\SidePanel\ 
+
+- WindowPanelBig_BG 
+	from Settings\
+
+- WindowPanelBig_ExtraEffects_Icon (OPTIONAL) 
+	from Settins\
+

@@ -1,0 +1,848 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1551095732680412}
+  m_IsPrefabParent: 1
+--- !u!1 &1344463622258902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4343472884806076}
+  - component: {fileID: 114128846019067814}
+  m_Layer: 0
+  m_Name: Vehicle_1_Basic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1423631869188242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4702482075625576}
+  - component: {fileID: 114185743969460976}
+  m_Layer: 0
+  m_Name: Vehicle_3_Sedan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1507542045112776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4226710001574750}
+  - component: {fileID: 114758461643677450}
+  m_Layer: 0
+  m_Name: Vehicle_4_Heavy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1525271171901916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4870411085853996}
+  - component: {fileID: 114774154477254756}
+  m_Layer: 0
+  m_Name: Vehicle_7_Sports
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1551095732680412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4179141143679408}
+  m_Layer: 0
+  m_Name: _Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1695490603300024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4249936426274024}
+  - component: {fileID: 114434832067276568}
+  m_Layer: 0
+  m_Name: Vehicle_6_Exotic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1905825093961406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4277460119912508}
+  - component: {fileID: 114479510333273420}
+  m_Layer: 0
+  m_Name: Vehicle_2_Van
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1936017043487748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4033408089849214}
+  - component: {fileID: 114942800172834696}
+  m_Layer: 0
+  m_Name: Vehicle_5_Muscle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4033408089849214
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936017043487748}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4179141143679408}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4179141143679408
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1551095732680412}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6000007, y: 2.6199996, z: -8.050002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4343472884806076}
+  - {fileID: 4277460119912508}
+  - {fileID: 4870411085853996}
+  - {fileID: 4249936426274024}
+  - {fileID: 4033408089849214}
+  - {fileID: 4226710001574750}
+  - {fileID: 4702482075625576}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4226710001574750
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507542045112776}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4179141143679408}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4249936426274024
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1695490603300024}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4179141143679408}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4277460119912508
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1905825093961406}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4179141143679408}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4343472884806076
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1344463622258902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4179141143679408}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4702482075625576
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1423631869188242}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4179141143679408}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4870411085853996
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1525271171901916}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4179141143679408}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114128846019067814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1344463622258902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e79c512b4ed744fbfb09534b1cdcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayName: Default
+  StorageIndex: 0
+  S_Silhouette: {fileID: 21300000, guid: 21340ea4e33e8d547bdf465e415455ed, type: 3}
+  EngineValue: 00000000000000000000000000000000
+  HealthValue: 00000000000000000000000000000000
+  ControlsValue: 00000000000000000000000000000000
+  BoosterValue: 00000000000000000000000000000000
+  AccelerationKick: 00000000000000000000000000000000
+  BrakesKick: 00000000000000000000000000000000
+  EngineUpgradePercentage: 00000000000000000000000000000000
+  HealthUpgradePercentage: 00000000000000000000000000000000
+  ControlsUpgradePercentage: 00000000000000000000000000000000
+  BoosterUpgradePercentage: 00000000000000000000000000000000
+  PBarEngine:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarHealth:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarControls:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarBooster:
+  - 0
+  - 0
+  - 0
+  - 0
+  VehicleCost: 0
+  EngineCost: 00000000000000000000000000000000
+  HealthCost: 00000000000000000000000000000000
+  ControlsCost: 00000000000000000000000000000000
+  BoosterCost: 00000000000000000000000000000000
+  MaxUpgrades: 4
+  VehicleSkins:
+  - {fileID: 2800000, guid: 35a2f22f3f2eab0439eb34371fc007a5, type: 3}
+  - {fileID: 2800000, guid: 53801cc2ded56b74aae7cc3a8a525fa6, type: 3}
+  - {fileID: 2800000, guid: f2629f565b882694bac2f7381ae736c0, type: 3}
+  - {fileID: 2800000, guid: ce35b64d5d3bf2941929c91388af68ef, type: 3}
+  - {fileID: 2800000, guid: b84d48ffeb0f1a544a64f818a2233ed9, type: 3}
+  - {fileID: 2800000, guid: a1422ca9d1e10b94fb5606ffe7956c61, type: 3}
+  - {fileID: 2800000, guid: ccb05b5ee3fcd6e4ca3b8ee428d8e9a0, type: 3}
+  - {fileID: 2800000, guid: f9da9a0366a610d4ab9f07b455190975, type: 3}
+  - {fileID: 2800000, guid: ab529ad3827f3a142a2f68e6ce88b2ed, type: 3}
+  - {fileID: 2800000, guid: d8c72e1c8691ff3429bc057c6304ac88, type: 3}
+  - {fileID: 2800000, guid: 82bb426599a3a2e43944bdab542960ac, type: 3}
+  - {fileID: 2800000, guid: 2ee35112bcca64440a8d708135091927, type: 3}
+  SkinSprites:
+  - {fileID: 21300000, guid: bbb7c70f49401e049b794651262b51fd, type: 3}
+  - {fileID: 21300000, guid: ce982ee9a1a564545b20f6f07f211802, type: 3}
+  - {fileID: 21300000, guid: 86b584f44f4618848b07b91566466c2c, type: 3}
+  - {fileID: 21300000, guid: 275d14ccaed07034d88d0e90dee609b8, type: 3}
+  - {fileID: 21300000, guid: 9a7f86f5b75ccf64e98fd0968faa273e, type: 3}
+  - {fileID: 21300000, guid: 0c7dc5891ee908f46af8eb1b54f7425d, type: 3}
+  - {fileID: 21300000, guid: 50df2d7f6efe6964899e3887295f9092, type: 3}
+  - {fileID: 21300000, guid: 02f59d6a2f1f3c142a9d97801acd2a76, type: 3}
+  - {fileID: 21300000, guid: 87e4b661e8c964b4d802268670fdf90c, type: 3}
+  - {fileID: 21300000, guid: c7e2323f438d23a4a8b4f56ce1c61549, type: 3}
+  - {fileID: 21300000, guid: fc9065864f9f33b4bb0fa86514869688, type: 3}
+  - {fileID: 21300000, guid: 16bae1e9e68a812438ebd098da6bc9ca, type: 3}
+  SkinStorageID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+  SkinCost: dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000
+  TotalSkins: 12
+  isPurchased: 0
+  PurchaseIndex: 0
+  EngineLevel: 0
+  HealthLevel: 0
+  TurningLevel: 0
+  BoosterLevel: 0
+  SkinsPurchaseOrder: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  isSkinsDataLoaded: 0
+--- !u!114 &114185743969460976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1423631869188242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e79c512b4ed744fbfb09534b1cdcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayName: Sedan
+  StorageIndex: 2
+  S_Silhouette: {fileID: 21300000, guid: ba94b97728d3c804d97e5115f23e2f51, type: 3}
+  EngineValue: 00000000000000000000000000000000
+  HealthValue: 00000000000000000000000000000000
+  ControlsValue: 00000000000000000000000000000000
+  BoosterValue: 00000000000000000000000000000000
+  AccelerationKick: 00000000000000000000000000000000
+  BrakesKick: 00000000000000000000000000000000
+  EngineUpgradePercentage: 00000000000000000000000000000000
+  HealthUpgradePercentage: 00000000000000000000000000000000
+  ControlsUpgradePercentage: 00000000000000000000000000000000
+  BoosterUpgradePercentage: 00000000000000000000000000000000
+  PBarEngine:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarHealth:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarControls:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarBooster:
+  - 0
+  - 0
+  - 0
+  - 0
+  VehicleCost: 0
+  EngineCost: 00000000000000000000000000000000
+  HealthCost: 00000000000000000000000000000000
+  ControlsCost: 00000000000000000000000000000000
+  BoosterCost: 00000000000000000000000000000000
+  MaxUpgrades: 4
+  VehicleSkins:
+  - {fileID: 2800000, guid: 04233199d1bc2ec4b80adeb05ea90474, type: 3}
+  - {fileID: 2800000, guid: ca99890c825e20f4a9bfdb309f3c8b0d, type: 3}
+  - {fileID: 2800000, guid: 68f03d7fac69157429ae9dcf3c182d39, type: 3}
+  - {fileID: 2800000, guid: 9c7a7a5c41cc8af4baf4e89e7185c500, type: 3}
+  - {fileID: 2800000, guid: 8f125d72a74395146a6a67c5802014b1, type: 3}
+  - {fileID: 2800000, guid: 04f2e1459fb9d2945bb64193a1c029a5, type: 3}
+  - {fileID: 2800000, guid: 14801c0d19f12d248b68ccd60045ca94, type: 3}
+  - {fileID: 2800000, guid: bb592b8d13bab3c49a44e3b1fe85e4b2, type: 3}
+  - {fileID: 2800000, guid: d6d0ea9dfbcd0d443af41c4e21537430, type: 3}
+  - {fileID: 2800000, guid: 83991e8d275157644966f342b993f16b, type: 3}
+  SkinSprites:
+  - {fileID: 21300000, guid: fc9065864f9f33b4bb0fa86514869688, type: 3}
+  - {fileID: 21300000, guid: 2d3081e27f3b68348a8616e31ce5f698, type: 3}
+  - {fileID: 21300000, guid: ce982ee9a1a564545b20f6f07f211802, type: 3}
+  - {fileID: 21300000, guid: 86b584f44f4618848b07b91566466c2c, type: 3}
+  - {fileID: 21300000, guid: 50df2d7f6efe6964899e3887295f9092, type: 3}
+  - {fileID: 21300000, guid: 02f59d6a2f1f3c142a9d97801acd2a76, type: 3}
+  - {fileID: 21300000, guid: 0c7dc5891ee908f46af8eb1b54f7425d, type: 3}
+  - {fileID: 21300000, guid: f8b26ae467a37f74499ac74268374002, type: 3}
+  - {fileID: 21300000, guid: bbb7c70f49401e049b794651262b51fd, type: 3}
+  - {fileID: 21300000, guid: c7e2323f438d23a4a8b4f56ce1c61549, type: 3}
+  SkinStorageID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
+  SkinCost: dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000
+  TotalSkins: 10
+  isPurchased: 0
+  PurchaseIndex: 0
+  EngineLevel: 0
+  HealthLevel: 0
+  TurningLevel: 0
+  BoosterLevel: 0
+  SkinsPurchaseOrder: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  isSkinsDataLoaded: 0
+--- !u!114 &114434832067276568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1695490603300024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e79c512b4ed744fbfb09534b1cdcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayName: Exotic
+  StorageIndex: 5
+  S_Silhouette: {fileID: 21300000, guid: cc89cb701bffcac42b99fe84e7522f72, type: 3}
+  EngineValue: 00000000000000000000000000000000
+  HealthValue: 00000000000000000000000000000000
+  ControlsValue: 00000000000000000000000000000000
+  BoosterValue: 00000000000000000000000000000000
+  AccelerationKick: 00000000000000000000000000000000
+  BrakesKick: 00000000000000000000000000000000
+  EngineUpgradePercentage: 00000000000000000000000000000000
+  HealthUpgradePercentage: 00000000000000000000000000000000
+  ControlsUpgradePercentage: 00000000000000000000000000000000
+  BoosterUpgradePercentage: 00000000000000000000000000000000
+  PBarEngine:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarHealth:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarControls:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarBooster:
+  - 0
+  - 0
+  - 0
+  - 0
+  VehicleCost: 0
+  EngineCost: 00000000000000000000000000000000
+  HealthCost: 00000000000000000000000000000000
+  ControlsCost: 00000000000000000000000000000000
+  BoosterCost: 00000000000000000000000000000000
+  MaxUpgrades: 4
+  VehicleSkins:
+  - {fileID: 2800000, guid: ba2a87989753464428d867171a8757ff, type: 3}
+  - {fileID: 2800000, guid: 091122862f8932649997cd7affad1113, type: 3}
+  - {fileID: 2800000, guid: 4d4829048f44db34e86cf05c8d49a601, type: 3}
+  - {fileID: 2800000, guid: 284e208170053fd48a9c63d1fb5b86e0, type: 3}
+  - {fileID: 2800000, guid: 25714a3b7083abb4dacdc7432f50353b, type: 3}
+  - {fileID: 2800000, guid: d8dd971ae799bb54db239d9bf28ed779, type: 3}
+  - {fileID: 2800000, guid: c6c9744ac6e7c5a458cb690a53c03fe5, type: 3}
+  - {fileID: 2800000, guid: 759eebf870193b14bb16ab031fd48061, type: 3}
+  - {fileID: 2800000, guid: 4733e3a85ee1ff84fb5bede24a212f4c, type: 3}
+  - {fileID: 2800000, guid: 92e391050927fd049af713d00e218761, type: 3}
+  - {fileID: 2800000, guid: 871899e9a4e6dd24db699a60693cbe24, type: 3}
+  - {fileID: 2800000, guid: a42b1c373f70a124a9c491ffc267e82e, type: 3}
+  SkinSprites:
+  - {fileID: 21300000, guid: 86b584f44f4618848b07b91566466c2c, type: 3}
+  - {fileID: 21300000, guid: 275c913585efd6f48934cf754af0f7e9, type: 3}
+  - {fileID: 21300000, guid: 02f59d6a2f1f3c142a9d97801acd2a76, type: 3}
+  - {fileID: 21300000, guid: bbb7c70f49401e049b794651262b51fd, type: 3}
+  - {fileID: 21300000, guid: 87e4b661e8c964b4d802268670fdf90c, type: 3}
+  - {fileID: 21300000, guid: c7e2323f438d23a4a8b4f56ce1c61549, type: 3}
+  - {fileID: 21300000, guid: 0c7dc5891ee908f46af8eb1b54f7425d, type: 3}
+  - {fileID: 21300000, guid: fc9065864f9f33b4bb0fa86514869688, type: 3}
+  - {fileID: 21300000, guid: fada6cfa07983174b8ab6ea59ee0a757, type: 3}
+  - {fileID: 21300000, guid: 3677cba0e80475d4ca3d51aa22c40ad4, type: 3}
+  - {fileID: 21300000, guid: a5f5613fe90948c4db607cf74612487a, type: 3}
+  - {fileID: 21300000, guid: 4a0beb365c7a7d8409fbae7e0583a31f, type: 3}
+  SkinStorageID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+  SkinCost: dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000
+  TotalSkins: 12
+  isPurchased: 0
+  PurchaseIndex: 0
+  EngineLevel: 0
+  HealthLevel: 0
+  TurningLevel: 0
+  BoosterLevel: 0
+  SkinsPurchaseOrder: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  isSkinsDataLoaded: 0
+--- !u!114 &114479510333273420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1905825093961406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e79c512b4ed744fbfb09534b1cdcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayName: Van
+  StorageIndex: 1
+  S_Silhouette: {fileID: 21300000, guid: 75a5d2a4a4fd5664485d41483ef80981, type: 3}
+  EngineValue: 00000000000000000000000000000000
+  HealthValue: 00000000000000000000000000000000
+  ControlsValue: 00000000000000000000000000000000
+  BoosterValue: 00000000000000000000000000000000
+  AccelerationKick: 00000000000000000000000000000000
+  BrakesKick: 00000000000000000000000000000000
+  EngineUpgradePercentage: 00000000000000000000000000000000
+  HealthUpgradePercentage: 00000000000000000000000000000000
+  ControlsUpgradePercentage: 00000000000000000000000000000000
+  BoosterUpgradePercentage: 00000000000000000000000000000000
+  PBarEngine:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarHealth:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarControls:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarBooster:
+  - 0
+  - 0
+  - 0
+  - 0
+  VehicleCost: 0
+  EngineCost: 00000000000000000000000000000000
+  HealthCost: 00000000000000000000000000000000
+  ControlsCost: 00000000000000000000000000000000
+  BoosterCost: 00000000000000000000000000000000
+  MaxUpgrades: 4
+  VehicleSkins:
+  - {fileID: 2800000, guid: 4370aea740f958341b82d70444323b09, type: 3}
+  - {fileID: 2800000, guid: ebd42bb7aef5edf4db055a8234ba67f4, type: 3}
+  - {fileID: 2800000, guid: 63245e4cb259c524098ebaecf06b83b8, type: 3}
+  - {fileID: 2800000, guid: 83b98d0c68ea71443a2f28ae59e94319, type: 3}
+  - {fileID: 2800000, guid: 930821f4021a9c247bffa0ce633ffb43, type: 3}
+  - {fileID: 2800000, guid: 95af3a0e2285a1941a6eab7eb5c973eb, type: 3}
+  - {fileID: 2800000, guid: a197e7256bba3e042b1ce2ebd64528bc, type: 3}
+  - {fileID: 2800000, guid: 6e47425c4adfacc4caf2ee932cb4aeda, type: 3}
+  - {fileID: 2800000, guid: e282ecd3f48e2814083e9c61a9d2a570, type: 3}
+  - {fileID: 2800000, guid: 0900438d3b8f24f478341980617ea7fb, type: 3}
+  - {fileID: 2800000, guid: 791d449c54eb958408f3c7f72d6b2273, type: 3}
+  - {fileID: 2800000, guid: 5009dae50e26d894f9e3a54054b60842, type: 3}
+  SkinSprites:
+  - {fileID: 21300000, guid: 0c7dc5891ee908f46af8eb1b54f7425d, type: 3}
+  - {fileID: 21300000, guid: 02f59d6a2f1f3c142a9d97801acd2a76, type: 3}
+  - {fileID: 21300000, guid: ce982ee9a1a564545b20f6f07f211802, type: 3}
+  - {fileID: 21300000, guid: 86b584f44f4618848b07b91566466c2c, type: 3}
+  - {fileID: 21300000, guid: c7d2ccba93377ba4caf2b07809a0e49d, type: 3}
+  - {fileID: 21300000, guid: f8b26ae467a37f74499ac74268374002, type: 3}
+  - {fileID: 21300000, guid: bbb7c70f49401e049b794651262b51fd, type: 3}
+  - {fileID: 21300000, guid: a5f5613fe90948c4db607cf74612487a, type: 3}
+  - {fileID: 21300000, guid: 87e4b661e8c964b4d802268670fdf90c, type: 3}
+  - {fileID: 21300000, guid: 852d6baa6d7328e4392a2222a6992aa7, type: 3}
+  - {fileID: 21300000, guid: fc9065864f9f33b4bb0fa86514869688, type: 3}
+  - {fileID: 21300000, guid: 275d14ccaed07034d88d0e90dee609b8, type: 3}
+  SkinStorageID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+  SkinCost: dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000
+  TotalSkins: 12
+  isPurchased: 0
+  PurchaseIndex: 0
+  EngineLevel: 0
+  HealthLevel: 0
+  TurningLevel: 0
+  BoosterLevel: 0
+  SkinsPurchaseOrder: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  isSkinsDataLoaded: 0
+--- !u!114 &114758461643677450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507542045112776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e79c512b4ed744fbfb09534b1cdcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayName: Heavy
+  StorageIndex: 3
+  S_Silhouette: {fileID: 21300000, guid: 7f9ae6315fc5d994887b75bda15de565, type: 3}
+  EngineValue: 00000000000000000000000000000000
+  HealthValue: 00000000000000000000000000000000
+  ControlsValue: 00000000000000000000000000000000
+  BoosterValue: 00000000000000000000000000000000
+  AccelerationKick: 00000000000000000000000000000000
+  BrakesKick: 00000000000000000000000000000000
+  EngineUpgradePercentage: 00000000000000000000000000000000
+  HealthUpgradePercentage: 00000000000000000000000000000000
+  ControlsUpgradePercentage: 00000000000000000000000000000000
+  BoosterUpgradePercentage: 00000000000000000000000000000000
+  PBarEngine:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarHealth:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarControls:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarBooster:
+  - 0
+  - 0
+  - 0
+  - 0
+  VehicleCost: 0
+  EngineCost: 00000000000000000000000000000000
+  HealthCost: 00000000000000000000000000000000
+  ControlsCost: 00000000000000000000000000000000
+  BoosterCost: 00000000000000000000000000000000
+  MaxUpgrades: 4
+  VehicleSkins:
+  - {fileID: 2800000, guid: 738efb634167f24408211af0f9af47e5, type: 3}
+  - {fileID: 2800000, guid: 9cd910c1942170e449c64d5e5d00c1e0, type: 3}
+  - {fileID: 2800000, guid: 12dd50ec0fcd0b541b7e0f5163d10bef, type: 3}
+  - {fileID: 2800000, guid: b6752969eef8f5a4697042bed014d44e, type: 3}
+  - {fileID: 2800000, guid: 634804a3d4d733b44a31cd3c9e235364, type: 3}
+  - {fileID: 2800000, guid: 5ad37c4ac569ad44493eec40428c5881, type: 3}
+  - {fileID: 2800000, guid: 8b3cdb2112acc0a4f83ec8301dd7847e, type: 3}
+  - {fileID: 2800000, guid: 6afdda7b9e60ffc4cb1a7c9ea516019c, type: 3}
+  SkinSprites:
+  - {fileID: 21300000, guid: 02f59d6a2f1f3c142a9d97801acd2a76, type: 3}
+  - {fileID: 21300000, guid: 4a0beb365c7a7d8409fbae7e0583a31f, type: 3}
+  - {fileID: 21300000, guid: 3677cba0e80475d4ca3d51aa22c40ad4, type: 3}
+  - {fileID: 21300000, guid: 86b584f44f4618848b07b91566466c2c, type: 3}
+  - {fileID: 21300000, guid: bbb7c70f49401e049b794651262b51fd, type: 3}
+  - {fileID: 21300000, guid: 2d3081e27f3b68348a8616e31ce5f698, type: 3}
+  - {fileID: 21300000, guid: 87e4b661e8c964b4d802268670fdf90c, type: 3}
+  - {fileID: 21300000, guid: 275c913585efd6f48934cf754af0f7e9, type: 3}
+  SkinStorageID: 0000000001000000020000000300000004000000050000000600000007000000
+  SkinCost: dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000
+  TotalSkins: 8
+  isPurchased: 0
+  PurchaseIndex: 0
+  EngineLevel: 0
+  HealthLevel: 0
+  TurningLevel: 0
+  BoosterLevel: 0
+  SkinsPurchaseOrder: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  isSkinsDataLoaded: 0
+--- !u!114 &114774154477254756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1525271171901916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e79c512b4ed744fbfb09534b1cdcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayName: Sports
+  StorageIndex: 6
+  S_Silhouette: {fileID: 21300000, guid: 54aeaffaf5662654fb0e08a309d05df4, type: 3}
+  EngineValue: 00000000000000000000000000000000
+  HealthValue: 00000000000000000000000000000000
+  ControlsValue: 00000000000000000000000000000000
+  BoosterValue: 00000000000000000000000000000000
+  AccelerationKick: 00000000000000000000000000000000
+  BrakesKick: 00000000000000000000000000000000
+  EngineUpgradePercentage: 00000000000000000000000000000000
+  HealthUpgradePercentage: 00000000000000000000000000000000
+  ControlsUpgradePercentage: 00000000000000000000000000000000
+  BoosterUpgradePercentage: 00000000000000000000000000000000
+  PBarEngine:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarHealth:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarControls:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarBooster:
+  - 0
+  - 0
+  - 0
+  - 0
+  VehicleCost: 0
+  EngineCost: 00000000000000000000000000000000
+  HealthCost: 00000000000000000000000000000000
+  ControlsCost: 00000000000000000000000000000000
+  BoosterCost: 00000000000000000000000000000000
+  MaxUpgrades: 4
+  VehicleSkins:
+  - {fileID: 2800000, guid: 2f531df1d96a2f44a9679f9695025c27, type: 3}
+  - {fileID: 2800000, guid: 3778e63af3972e24b86aa661eaa7d52a, type: 3}
+  - {fileID: 2800000, guid: d906e41246ff4f04db342f7e42f46801, type: 3}
+  - {fileID: 2800000, guid: b60c3fad129433f4d81b8f7df744f337, type: 3}
+  - {fileID: 2800000, guid: 92e03e34fbe47894bbc994d2a80ebe56, type: 3}
+  - {fileID: 2800000, guid: 89e27d0d020a96240a12910038a5cf3b, type: 3}
+  - {fileID: 2800000, guid: 9654f32038fab864eab499d672bd29d9, type: 3}
+  - {fileID: 2800000, guid: 77fb188567b060544b60d7c16534b2af, type: 3}
+  - {fileID: 2800000, guid: 3e763c873e2dfac4f8290d4677fc2dd5, type: 3}
+  - {fileID: 2800000, guid: 55fc96df88b46c54b8d236b6dddb77f4, type: 3}
+  - {fileID: 2800000, guid: 2d4383400fdb16647a61aaab0e60785b, type: 3}
+  - {fileID: 2800000, guid: 4533d7e0d9d105c47a5a8b497225bfc5, type: 3}
+  SkinSprites:
+  - {fileID: 21300000, guid: 86b584f44f4618848b07b91566466c2c, type: 3}
+  - {fileID: 21300000, guid: fc9065864f9f33b4bb0fa86514869688, type: 3}
+  - {fileID: 21300000, guid: ce982ee9a1a564545b20f6f07f211802, type: 3}
+  - {fileID: 21300000, guid: c7d2ccba93377ba4caf2b07809a0e49d, type: 3}
+  - {fileID: 21300000, guid: 02f59d6a2f1f3c142a9d97801acd2a76, type: 3}
+  - {fileID: 21300000, guid: 9a7f86f5b75ccf64e98fd0968faa273e, type: 3}
+  - {fileID: 21300000, guid: e556d106685ee7445baf08d73f651257, type: 3}
+  - {fileID: 21300000, guid: 87e4b661e8c964b4d802268670fdf90c, type: 3}
+  - {fileID: 21300000, guid: f8b26ae467a37f74499ac74268374002, type: 3}
+  - {fileID: 21300000, guid: 275d14ccaed07034d88d0e90dee609b8, type: 3}
+  - {fileID: 21300000, guid: bbb7c70f49401e049b794651262b51fd, type: 3}
+  - {fileID: 21300000, guid: 100ff6b203e803044b5115d7fd42c117, type: 3}
+  SkinStorageID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+  SkinCost: dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000
+  TotalSkins: 12
+  isPurchased: 0
+  PurchaseIndex: 0
+  EngineLevel: 0
+  HealthLevel: 0
+  TurningLevel: 0
+  BoosterLevel: 0
+  SkinsPurchaseOrder: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  isSkinsDataLoaded: 0
+--- !u!114 &114942800172834696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936017043487748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e79c512b4ed744fbfb09534b1cdcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayName: Muscle
+  StorageIndex: 4
+  S_Silhouette: {fileID: 21300000, guid: 33a87614af828fd45a9b55db1d5692f2, type: 3}
+  EngineValue: 00000000000000000000000000000000
+  HealthValue: 00000000000000000000000000000000
+  ControlsValue: 00000000000000000000000000000000
+  BoosterValue: 00000000000000000000000000000000
+  AccelerationKick: 00000000000000000000000000000000
+  BrakesKick: 00000000000000000000000000000000
+  EngineUpgradePercentage: 00000000000000000000000000000000
+  HealthUpgradePercentage: 00000000000000000000000000000000
+  ControlsUpgradePercentage: 00000000000000000000000000000000
+  BoosterUpgradePercentage: 00000000000000000000000000000000
+  PBarEngine:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarHealth:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarControls:
+  - 0
+  - 0
+  - 0
+  - 0
+  PBarBooster:
+  - 0
+  - 0
+  - 0
+  - 0
+  VehicleCost: 0
+  EngineCost: 00000000000000000000000000000000
+  HealthCost: 00000000000000000000000000000000
+  ControlsCost: 00000000000000000000000000000000
+  BoosterCost: 00000000000000000000000000000000
+  MaxUpgrades: 4
+  VehicleSkins:
+  - {fileID: 2800000, guid: c139088a4697a034383b9f5d022807ef, type: 3}
+  - {fileID: 2800000, guid: f281058d40112bd4d803bef3a3444058, type: 3}
+  - {fileID: 2800000, guid: 1c634bac925297e4b82589f727ccb6a2, type: 3}
+  - {fileID: 2800000, guid: fa140885fa8adcd4a8d2af79bffbeb8a, type: 3}
+  - {fileID: 2800000, guid: 4d6ca560f53946b4a9e8b41293426fd2, type: 3}
+  - {fileID: 2800000, guid: 52225e219a41508438438eaed506220a, type: 3}
+  - {fileID: 2800000, guid: 1a14742ed29f6ef4fb8444c1bfdfaf9c, type: 3}
+  - {fileID: 2800000, guid: 3bc324abdf7f24b44b295b6813f9a468, type: 3}
+  - {fileID: 2800000, guid: b7a15a3f46f35ae4e81de5ff865a5d52, type: 3}
+  - {fileID: 2800000, guid: 326e918a4382bab4eb8d8df68ede7fe9, type: 3}
+  - {fileID: 2800000, guid: d784d59e99a57154da54266d967f6a60, type: 3}
+  - {fileID: 2800000, guid: 58c86cddf9d8eb04290a414b9d24c9d6, type: 3}
+  SkinSprites:
+  - {fileID: 21300000, guid: bbb7c70f49401e049b794651262b51fd, type: 3}
+  - {fileID: 21300000, guid: fc9065864f9f33b4bb0fa86514869688, type: 3}
+  - {fileID: 21300000, guid: ce982ee9a1a564545b20f6f07f211802, type: 3}
+  - {fileID: 21300000, guid: 86b584f44f4618848b07b91566466c2c, type: 3}
+  - {fileID: 21300000, guid: c7d2ccba93377ba4caf2b07809a0e49d, type: 3}
+  - {fileID: 21300000, guid: 87e4b661e8c964b4d802268670fdf90c, type: 3}
+  - {fileID: 21300000, guid: 2d3081e27f3b68348a8616e31ce5f698, type: 3}
+  - {fileID: 21300000, guid: 4a0beb365c7a7d8409fbae7e0583a31f, type: 3}
+  - {fileID: 21300000, guid: a5f5613fe90948c4db607cf74612487a, type: 3}
+  - {fileID: 21300000, guid: 275d14ccaed07034d88d0e90dee609b8, type: 3}
+  - {fileID: 21300000, guid: 02f59d6a2f1f3c142a9d97801acd2a76, type: 3}
+  - {fileID: 21300000, guid: fada6cfa07983174b8ab6ea59ee0a757, type: 3}
+  SkinStorageID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+  SkinCost: dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000dc050000
+  TotalSkins: 12
+  isPurchased: 0
+  PurchaseIndex: 0
+  EngineLevel: 0
+  HealthLevel: 0
+  TurningLevel: 0
+  BoosterLevel: 0
+  SkinsPurchaseOrder: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  isSkinsDataLoaded: 0

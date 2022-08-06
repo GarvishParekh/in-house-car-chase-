@@ -1,0 +1,11 @@
+- SidePanelBack_Button and SidePanelBack_Button_Pressed 
+	from \MainScreen\SidePanel\ 
+
+- WindowPanelBig_BG 
+	from Settings\
+
+- CustomizeColorSelected_Icon 
+	from MainScreen\SidePanel
+
+- SidePanel_Button and SidePanel_Button_Pressed 
+	from MainScreen\SidePanel

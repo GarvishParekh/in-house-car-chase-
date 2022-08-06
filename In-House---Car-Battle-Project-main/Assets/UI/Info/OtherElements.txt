@@ -1,0 +1,6 @@
+- SidePanelBack_Button and SidePanelBack_Button_Pressed 
+	from \MainScreen\SidePanel\ 
+
+- WindowPanelBig_BG 
+	from Settings\
+
