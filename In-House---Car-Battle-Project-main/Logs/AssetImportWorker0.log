@@ -989,3 +989,551 @@ Received Import Request.
 Start importing Assets/Toon Assets/Prefabs_Usable/Vehicles Player/Completed_Players/Car_2B (5 K) Van.prefab using Guid(150f3a9e47c98e9408cb1abc8e85ae75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7722b73b57f758aba21f4d4d96efb2') in 0.215360 seconds 
   Import took 0.221313 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 98.044942 seconds.
+  path: Assets/Textures/Car_Skins/Basic/Basic_1_Yellow + Orange.psd
+  artifactKey: Guid(82bb426599a3a2e43944bdab542960ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Car_Skins/Basic/Basic_1_Yellow + Orange.psd using Guid(82bb426599a3a2e43944bdab542960ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4898cbab8218f990472967b8c0f20f') in 0.901857 seconds 
+  Import took 0.909741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.337409 seconds.
+  path: Assets/Cartoon Weapons Pack/Prefabs/_Double_barreled_gun.prefab
+  artifactKey: Guid(efa1451e2b6290b4ab3698618fbf8320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Weapons Pack/Prefabs/_Double_barreled_gun.prefab using Guid(efa1451e2b6290b4ab3698618fbf8320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22789539f344373678a23666d59bb91c') in 0.012577 seconds 
+  Import took 0.016370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Cartoon Weapons Pack/Prefabs To Show/_Double_barreled_gun 1.prefab
+  artifactKey: Guid(7552fe3ef5ece694baa659a6a183757d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Weapons Pack/Prefabs To Show/_Double_barreled_gun 1.prefab using Guid(7552fe3ef5ece694baa659a6a183757d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ff74635a9e35a884ec6162ef0e6e69') in 0.012854 seconds 
+  Import took 0.015791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2590a25aefe63e8856d8e2c912345817') in 0.133907 seconds 
+  Import took 0.140685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/UI/Achievements/Achievement_Pbar.png
+  artifactKey: Guid(1dcf44e8e4dfad0459b8233e45af9dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Achievements/Achievement_Pbar.png using Guid(1dcf44e8e4dfad0459b8233e45af9dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727fd6e9fcd4968548c77a41aa3b73d3') in 0.655683 seconds 
+  Import took 0.662459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf
+  artifactKey: Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf using Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b525bf5cce1ab3bb4f9373e3154b9a3a') in 1.857886 seconds 
+  Import took 1.864540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Textures/Car_Skins/Basic/Basic_5_Bright Blue.psd
+  artifactKey: Guid(53801cc2ded56b74aae7cc3a8a525fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Car_Skins/Basic/Basic_5_Bright Blue.psd using Guid(53801cc2ded56b74aae7cc3a8a525fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36b308743f52a3735802456f59de23e') in 0.009919 seconds 
+  Import took 0.012903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Textures/Car_Skins/Basic/Basic_4_Matt Black 2.psd
+  artifactKey: Guid(f9da9a0366a610d4ab9f07b455190975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Car_Skins/Basic/Basic_4_Matt Black 2.psd using Guid(f9da9a0366a610d4ab9f07b455190975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c06c731165a0841bdff5d069585c9ad') in 0.015981 seconds 
+  Import took 0.019405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Textures/Car_Skins/Basic/Basic_7_Oranges Coffee.psd
+  artifactKey: Guid(ab529ad3827f3a142a2f68e6ce88b2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Car_Skins/Basic/Basic_7_Oranges Coffee.psd using Guid(ab529ad3827f3a142a2f68e6ce88b2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18bd04f110ead313efd3c042f30b5cc') in 0.024798 seconds 
+  Import took 0.028237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Textures/Car_Skins/Basic/Basic_6_Coffee.psd
+  artifactKey: Guid(f2629f565b882694bac2f7381ae736c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Car_Skins/Basic/Basic_6_Coffee.psd using Guid(f2629f565b882694bac2f7381ae736c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59dc005862665a8930494552c71d975d') in 0.015717 seconds 
+  Import took 0.019262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Textures/Car_Skins/Basic/Basic_2_Black.psd
+  artifactKey: Guid(ccb05b5ee3fcd6e4ca3b8ee428d8e9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Car_Skins/Basic/Basic_2_Black.psd using Guid(ccb05b5ee3fcd6e4ca3b8ee428d8e9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0dcda1d8b9a1ff20450bf572daf53d') in 0.020731 seconds 
+  Import took 0.023763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/UI/Achievements/AchievementPbar_BG.png
+  artifactKey: Guid(7ada331acb060964a9394309496d63f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Achievements/AchievementPbar_BG.png using Guid(7ada331acb060964a9394309496d63f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65922ae85909c2887afdb1616d40adc5') in 0.032063 seconds 
+  Import took 0.036540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.095713 seconds.
+  path: Assets/Materials/Cars Player/Basic_Game.mat
+  artifactKey: Guid(5e55bc1e8cd9b2248901150d88bff4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Cars Player/Basic_Game.mat using Guid(5e55bc1e8cd9b2248901150d88bff4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba9eaa7fd6e3ef3fbd9022237a2adbe8') in 0.095200 seconds 
+  Import took 0.102451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 255.121367 seconds.
+  path: Assets/Toon Assets/Prefabs_Usable/Vehicles Player/Completed_Players/Car_8E (3.6 K) Sedan.prefab
+  artifactKey: Guid(7ace6b99e9df6dd4cb9be0d3c85228ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toon Assets/Prefabs_Usable/Vehicles Player/Completed_Players/Car_8E (3.6 K) Sedan.prefab using Guid(7ace6b99e9df6dd4cb9be0d3c85228ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315d1be560d4dff98009d0ec57e9e469') in 0.015488 seconds 
+  Import took 0.019357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.438912 seconds.
+  path: Assets/Toon Assets/Prefabs_Usable/Vehicles Player/Completed_Players
+  artifactKey: Guid(caa3752fec4b3294cb4e3000b4bccb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toon Assets/Prefabs_Usable/Vehicles Player/Completed_Players using Guid(caa3752fec4b3294cb4e3000b4bccb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d064da6180c26e5b6b858ed6328881') in 0.002374 seconds 
+  Import took 0.005607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.974648 seconds.
+  path: Assets/Toon Assets/Prefabs_Usable/Vehicles Player/Completed_Players/Car_2B (5 K) Van.prefab
+  artifactKey: Guid(150f3a9e47c98e9408cb1abc8e85ae75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toon Assets/Prefabs_Usable/Vehicles Player/Completed_Players/Car_2B (5 K) Van.prefab using Guid(150f3a9e47c98e9408cb1abc8e85ae75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9beaea1d433cb2232d1bdf2e15dd4011') in 0.015953 seconds 
+  Import took 0.019818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.160608 seconds.
+  path: Assets/Desert Customized/Mesh/bonfire - 810.FBX
+  artifactKey: Guid(791ba2a23907c86488e00bfe3f74f8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Desert Customized/Mesh/bonfire - 810.FBX using Guid(791ba2a23907c86488e00bfe3f74f8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b29101428b5c0ac4e77faa4f3f11fa') in 0.719671 seconds 
+  Import took 0.727868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall B Yellow.prefab
+  artifactKey: Guid(8c902b8addbb11146b43f42c60b87174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall B Yellow.prefab using Guid(8c902b8addbb11146b43f42c60b87174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6c2037e461c0ac1a425017a1010156e') in 0.016839 seconds 
+  Import took 0.021417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireBall C.prefab
+  artifactKey: Guid(9f84515800072d6479df88e8bd2f6604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireBall C.prefab using Guid(9f84515800072d6479df88e8bd2f6604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6890d9251a842bb830c60014a02aed66') in 0.072550 seconds 
+  Import took 0.077998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireBall B.prefab
+  artifactKey: Guid(dd49647e97a964c4ca764b6b0672bb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireBall B.prefab using Guid(dd49647e97a964c4ca764b6b0672bb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e016857a9deef09e2404e5ac161e7958') in 0.012931 seconds 
+  Import took 0.018243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Desert Customized/Prefabs/Props/bonfire - 810.prefab
+  artifactKey: Guid(f37590ecd0df7f648962921e304fe855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Desert Customized/Prefabs/Props/bonfire - 810.prefab using Guid(f37590ecd0df7f648962921e304fe855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbecd7a60f4395f255565e97481157bc') in 0.017645 seconds 
+  Import took 0.021969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall A Blue.prefab
+  artifactKey: Guid(348859066dd513a4d914da324a0182f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall A Blue.prefab using Guid(348859066dd513a4d914da324a0182f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a63d85e042ac220c966ecf3f5e49898a') in 0.027521 seconds 
+  Import took 0.033506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall A Green.prefab
+  artifactKey: Guid(f6a5c739902c6a0418b98dbedd6f65f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall A Green.prefab using Guid(f6a5c739902c6a0418b98dbedd6f65f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31bf6c91e3641e11a61338f9db0e1bd') in 0.021951 seconds 
+  Import took 0.028532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Desert Customized/Prefab_Old/bonfire.prefab
+  artifactKey: Guid(7ba1cae7345eddc4c8f851d6a78058b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Desert Customized/Prefab_Old/bonfire.prefab using Guid(7ba1cae7345eddc4c8f851d6a78058b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6cd01abeeddef6dfd342c62243d82a3') in 0.021056 seconds 
+  Import took 0.025244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall B Purple.prefab
+  artifactKey: Guid(c21ef958b31d43547a9ecac34321302f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall B Purple.prefab using Guid(c21ef958b31d43547a9ecac34321302f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa69781080c1382a1a71318a5194ed4') in 0.023795 seconds 
+  Import took 0.029983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireBall A.prefab
+  artifactKey: Guid(9b14949a91c70984ba38e19fe01a71ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireBall A.prefab using Guid(9b14949a91c70984ba38e19fe01a71ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68dd47dac5aa74d55d43a6ec9f7566b7') in 0.026882 seconds 
+  Import took 0.031506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.741810 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall C Black.prefab
+  artifactKey: Guid(e57a6ab429b446e44bee0cd83a490b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall C Black.prefab using Guid(e57a6ab429b446e44bee0cd83a490b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0436373c6172438c34a24c617e9e31d5') in 0.013410 seconds 
+  Import took 0.017217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall A Black.prefab
+  artifactKey: Guid(5376123098f07a24fa8eae1f8b92941f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall A Black.prefab using Guid(5376123098f07a24fa8eae1f8b92941f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c0b464f67596fc7bf70d362aef73014') in 0.009275 seconds 
+  Import took 0.011972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireWall A.prefab
+  artifactKey: Guid(e49a83d3fa443ce4d995ef0d7dcd70d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireWall A.prefab using Guid(e49a83d3fa443ce4d995ef0d7dcd70d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ddc449ee5b4bd6332603441e08c725') in 0.017930 seconds 
+  Import took 0.021739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall C White.prefab
+  artifactKey: Guid(2d6348406530f8a4383161afd5e7cd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireBall C White.prefab using Guid(2d6348406530f8a4383161afd5e7cd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca410cb5947cd0d76fac21b90e8e507') in 0.026881 seconds 
+  Import took 0.031709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.212190 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall A Purple.prefab
+  artifactKey: Guid(50b69781c26ce66489b46112c5dd46cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall A Purple.prefab using Guid(50b69781c26ce66489b46112c5dd46cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0d99885e827e6a8f07bec9b9a0f404') in 0.010281 seconds 
+  Import took 0.014022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireWall B.prefab
+  artifactKey: Guid(72ad9d7c07cc46f4597963007a815e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireWall B.prefab using Guid(72ad9d7c07cc46f4597963007a815e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39f01a2983d85bdcc7389155e9e6e27e') in 0.009815 seconds 
+  Import took 0.012778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032184 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall B White.prefab
+  artifactKey: Guid(119af95019168e847ae5dbd150761b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall B White.prefab using Guid(119af95019168e847ae5dbd150761b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e35d0d3d215dee1861fe795b5f85f4') in 0.018664 seconds 
+  Import took 0.024588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall B Yellow.prefab
+  artifactKey: Guid(a015f2ddc4e273647884a3bba8449225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall B Yellow.prefab using Guid(a015f2ddc4e273647884a3bba8449225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61cf82b85d18fc0c09b1cd0532e1917') in 0.014122 seconds 
+  Import took 0.018758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006654 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireWall C.prefab
+  artifactKey: Guid(8f313d60a6a285b4496330267833e246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/CFXM2_DoubleFireWall C.prefab using Guid(8f313d60a6a285b4496330267833e246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e41de01e8a6b8bee81ff4dfb0031bb3b') in 0.018204 seconds 
+  Import took 0.023124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall C Blue.prefab
+  artifactKey: Guid(9c31e626517a5cd4e9c41c0d46698494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs (Mobile)/Fire/Color Variants/CFXM2_DoubleFireWall C Blue.prefab using Guid(9c31e626517a5cd4e9c41c0d46698494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c923d70e14356da829545fccec0091') in 0.013887 seconds 
+  Import took 0.018064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.659036 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Materials (Mobile)/Misc/CFXM_Smoke_4frms.mat
+  artifactKey: Guid(0d7928d671ec5d4468a8171667aebf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/Materials (Mobile)/Misc/CFXM_Smoke_4frms.mat using Guid(0d7928d671ec5d4468a8171667aebf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714dfcf1f9662fc4f1a956e6e9d50d92') in 0.024268 seconds 
+  Import took 0.029330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.451096 seconds.
+  path: Assets/JMO Assets/Cartoon FX/Materials (Mobile)/Animated/CFXM_Anim_Bubble_Add.mat
+  artifactKey: Guid(76339fe057678ee4c97b27b9f1d6f99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX/Materials (Mobile)/Animated/CFXM_Anim_Bubble_Add.mat using Guid(76339fe057678ee4c97b27b9f1d6f99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86e8f41a76ba748dae87a8c1790a635') in 0.011895 seconds 
+  Import took 0.018274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 153.671419 seconds.
+  path: Assets/Textures/Car_Skins/Sedan/Sedan_2_Black.PSD
+  artifactKey: Guid(8f125d72a74395146a6a67c5802014b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Car_Skins/Sedan/Sedan_2_Black.PSD using Guid(8f125d72a74395146a6a67c5802014b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe070e86bc83f04c2d16bb43edea0c82') in 0.849291 seconds 
+  Import took 0.857016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.628845 seconds.
+  path: Assets/Toon Assets/Prefabs_Usable/Vehicles Player/Completed_Players/Car_6B (4.5 K) Muscle.prefab
+  artifactKey: Guid(bdd27b0d8ec076344869cecf07aa4391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toon Assets/Prefabs_Usable/Vehicles Player/Completed_Players/Car_6B (4.5 K) Muscle.prefab using Guid(bdd27b0d8ec076344869cecf07aa4391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac406d15b6035f919419dfaa40c73e1') in 0.015086 seconds 
+  Import took 0.018826 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001192 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-08-08 12:00:07.512 Unity[5789:70877] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001e06060 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.083 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1083ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (904ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (280ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (340ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1811 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 231.1 MB.
+System memory in use after: 230.5 MB.
+
+Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 2372.
+Total: 7.180382 ms (FindLiveObjects: 0.295674 ms CreateObjectMapping: 0.120117 ms MarkObjects: 6.126342 ms  DeleteObjects: 0.636998 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001416 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-08-08 12:00:24.587 Unity[5789:70877] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001e51570 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.032 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1032ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (861ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (269ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (328ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (145ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.03 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1811 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 231.2 MB.
+System memory in use after: 230.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2374.
+Total: 6.515364 ms (FindLiveObjects: 0.200975 ms CreateObjectMapping: 0.064460 ms MarkObjects: 5.640963 ms  DeleteObjects: 0.607980 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002028 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-08-08 12:00:58.754 Unity[5789:70877] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001e69810 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Domain Reload Profiling:
+	ReloadAssembly (988ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (821ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (257ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (311ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (139ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1811 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 231.4 MB.
+System memory in use after: 230.9 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2376.
+Total: 6.792510 ms (FindLiveObjects: 0.309193 ms CreateObjectMapping: 0.102628 ms MarkObjects: 5.646563 ms  DeleteObjects: 0.733049 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001452 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-08-08 12:04:37.576 Unity[5789:70877] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001e02290 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.045 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1045ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (872ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (328ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (125ms)
+				ProcessInitializeOnLoadAttributes (145ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.10 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1811 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 231.6 MB.
+System memory in use after: 231.1 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2378.
+Total: 7.582141 ms (FindLiveObjects: 0.208657 ms CreateObjectMapping: 0.072582 ms MarkObjects: 6.600381 ms  DeleteObjects: 0.699185 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
