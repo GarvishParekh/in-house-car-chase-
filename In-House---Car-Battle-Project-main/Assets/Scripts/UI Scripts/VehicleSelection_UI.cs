@@ -55,6 +55,7 @@ public class VehicleSelection_UI : MonoBehaviour
 
 	[Space]
 	[SerializeField] GameObject buyButton;
+	[SerializeField] GameObject startbutton;
 	[SerializeField] TMP_Text vehicleCost;
 	[SerializeField] GameObject customizeButton;
 
@@ -139,12 +140,14 @@ public class VehicleSelection_UI : MonoBehaviour
         {
 			buyButton.SetActive(true);
 			customizeButton.SetActive(false);
+			startbutton.SetActive(false);
 			vehicleCost.text = vehiclePrice.ToString();
         }
         else
         {
 			buyButton.SetActive(false);
 			customizeButton.SetActive(true);
+			startbutton.SetActive(true);
 		}
 		LastVehicleIndex = SelectedVehicle_ListIndex;
 

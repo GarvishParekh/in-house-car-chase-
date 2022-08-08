@@ -42608,6 +42608,7 @@ MonoBehaviour:
   CamMoveSpeed: 5
   CamRotSpeed: 3
   buyButton: {fileID: 430045843}
+  startbutton: {fileID: 1137033489}
   vehicleCost: {fileID: 1027002179}
   customizeButton: {fileID: 277784067}
 --- !u!114 &1611434471
