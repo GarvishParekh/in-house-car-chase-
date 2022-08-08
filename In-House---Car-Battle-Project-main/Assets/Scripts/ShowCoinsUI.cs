@@ -1,4 +1,5 @@
 ﻿using TMPro;
+using System;
 using UnityEngine;
 
 public class ShowCoinsUI : MonoBehaviour 
@@ -26,9 +27,16 @@ public class ShowCoinsUI : MonoBehaviour
 		{
 			TCoins.text = LastShown.ToString();
 		}
+
+		VehicleSelection_UI.UpdateBuyUI += UpdateCoinUI;
 	}
 
-	void Update () 
+    private void OnDisable()
+    {
+		VehicleSelection_UI.UpdateBuyUI -= UpdateCoinUI;
+    }
+
+    void Update () 
 	{
 		if(!isPauseUI)
 		{
@@ -72,5 +80,11 @@ public class ShowCoinsUI : MonoBehaviour
 		}
 
 		TotalCoins = PlayerPrefs.GetInt("TotalCoins", 0);
+	}
+
+	void UpdateCoinUI ()
+    {
+		int totalCoint = PlayerPrefs.GetInt("TotalCoins", 0);
+		TCoins.text = totalCoint.ToString();
 	}
 }

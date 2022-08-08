@@ -11549,9 +11549,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1611434472}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnClick_Customize
+      - m_Target: {fileID: 1611434470}
+        m_TargetAssemblyTypeName: VehicleSelection_UI, Assembly-CSharp
+        m_MethodName: B_BuyButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14130,7 +14130,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -22.799622, y: 29.000008}
+  m_AnchoredPosition: {x: -22.799683, y: 29.000008}
   m_SizeDelta: {x: 330, y: 420}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &592216765

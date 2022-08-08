@@ -17,9 +17,20 @@ public class VehicleSelectionButton : MonoBehaviour, IPointerClickHandler
 
 	public static Action<int, int> OnVehicleSelectionButtonClicked;
 
+
     private void Start()
     {
 		GetVehicalInfo();
+    }
+
+    private void OnEnable()
+    {
+		VehicleSelection_UI.UpdateBuyUI += GetVehicalInfo;
+    }
+
+    private void OnDisable()
+    {
+		VehicleSelection_UI.UpdateBuyUI += GetVehicalInfo;
     }
 
     public void OnPointerClick(PointerEventData D)
@@ -32,7 +43,12 @@ public class VehicleSelectionButton : MonoBehaviour, IPointerClickHandler
 
 	void GetVehicalInfo ()
 	{
-		Im_Vehicle.sprite = VehicleImageSystem.instance.vehicleIcons[ButtonIndex];
-		T_VehicleName.text = VehicleImageSystem.instance.vehicleName[ButtonIndex];
+		Im_Vehicle.sprite = VehicleImageSystem.instance.vehicleIcons[VehicleListIndex];
+		T_VehicleName.text = VehicleImageSystem.instance.vehicleName[VehicleListIndex];
+
+		if (PlayerPrefs.GetInt(string.Concat("VehiclePurchased_", VehicleListIndex.ToString()), 0) == 1)
+        {
+			Im_Lock.gameObject.SetActive(false);
+		}
 	}		
 }

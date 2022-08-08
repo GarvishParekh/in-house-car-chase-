@@ -59,6 +59,7 @@ public class VehicleSelection_UI : MonoBehaviour
 	[SerializeField] GameObject customizeButton;
 
 	public static Action<int> OnDefaultVehicleSeelcted;
+	public static Action UpdateBuyUI;
 
 
 	void OnEnable()
@@ -152,8 +153,20 @@ public class VehicleSelection_UI : MonoBehaviour
 		PlayerPrefs.SetInt("SelectedVehicle_StorageIndex", VehicleDetails[SelectedVehicle_ListIndex].StorageIndex);
 	}
 
+	// buy button function
 	public void B_BuyButton ()
     {
 		int vehicleCost = VehicleDetails[SelectedVehicle_ListIndex].VehicleCost;
+		int totalCoins = PlayerPrefs.GetInt("TotalCoins", 0);
+
+		if (totalCoins >= vehicleCost)
+        {
+			totalCoins -= vehicleCost;
+			PlayerPrefs.SetInt("TotalCoins", totalCoins);
+			PlayerPrefs.SetInt(string.Concat("VehiclePurchased_", SelectedVehicle_ListIndex.ToString()), 1);
+
+			ShowCurrentVehicle();
+			UpdateBuyUI?.Invoke();
+		}
 	}
 }
