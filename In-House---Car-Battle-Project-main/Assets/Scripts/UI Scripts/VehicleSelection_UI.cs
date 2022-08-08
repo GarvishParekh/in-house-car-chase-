@@ -101,6 +101,11 @@ public class VehicleSelection_UI : MonoBehaviour
 
 	void Update()
 	{
+		if (Input.GetKeyDown (KeyCode.Space))
+        {
+			DeleteAllSaveFiles();
+        }
+
 		Cam.position = Vector3.Lerp (Cam.position, TargetTransform.position, CamMoveSpeed * Time.deltaTime);
 		Cam.eulerAngles = Vector3.Lerp (Cam.eulerAngles, TargetTransform.eulerAngles, CamRotSpeed * Time.deltaTime);
 	}
@@ -111,6 +116,7 @@ public class VehicleSelection_UI : MonoBehaviour
 		SelectedVehicle_ListIndex = V_ListIndex;
 
 		ShowCurrentVehicle();
+		PlayerPrefs.SetInt("SelectedVehicle", V_ListIndex);
 	}
 
 	void ShowCurrentVehicle(bool ShowDirect = false)
@@ -118,7 +124,15 @@ public class VehicleSelection_UI : MonoBehaviour
 		Vehicles [LastVehicleIndex].SetActive (false);
 		Vehicles [SelectedVehicle_ListIndex].SetActive (true);
 
-		bool isBought = VehicleDetails[SelectedVehicle_ListIndex].isPurchased;
+		bool isBought = false;
+		if (PlayerPrefs.GetInt(string.Concat("VehiclePurchased_", SelectedVehicle_ListIndex.ToString()), 0) == 1)
+        {
+			isBought = true;
+		}
+        else
+        {
+			isBought = false;
+        }
 		int vehiclePrice = VehicleDetails[SelectedVehicle_ListIndex].VehicleCost;
 
 		if (!isBought)
@@ -169,4 +183,9 @@ public class VehicleSelection_UI : MonoBehaviour
 			UpdateBuyUI?.Invoke();
 		}
 	}
+
+	void DeleteAllSaveFiles ()
+    {
+		PlayerPrefs.DeleteAll();
+    }
 }

@@ -44,7 +44,7 @@ public class ShowCoinsUI : MonoBehaviour
 			{
 				LastShown = Mathf.MoveTowards (LastShown, TotalCoins, AnimationSpeed * Time.deltaTime);
 
-				TCoins.text = ((int)LastShown).ToString();
+				//TCoins.text = ((int)LastShown).ToString();
 			}
 		}
 		AddCoins();
