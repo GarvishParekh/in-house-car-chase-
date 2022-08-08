@@ -6,7 +6,7 @@ public class Car_Spawner : MonoBehaviour
 
     private void Start()
     {
-        int selectedCar = PlayerPrefs.GetInt("SelectedVehile", 0);
+        int selectedCar = PlayerPrefs.GetInt("SelectedVehicle", 0);
         Instantiate(cars[selectedCar], Vector3.zero, Quaternion.identity);
     }
 }
