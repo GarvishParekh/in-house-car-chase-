@@ -16,7 +16,9 @@ public class ShowCoinsUI : MonoBehaviour
 
 	void OnEnable()
 	{
-		TotalCoins = PlayerPrefs.GetInt("TotalCoins", 0);
+		PlayerPrefs.SetInt("TotalCoins", 99999);
+		PlayerPrefs.Save();
+		TotalCoins = PlayerPrefs.GetInt("TotalCoins", 99999);
 		LastShown = TotalCoins;
 
 		if(isPauseUI)
@@ -47,7 +49,7 @@ public class ShowCoinsUI : MonoBehaviour
 				//TCoins.text = ((int)LastShown).ToString();
 			}
 		}
-		AddCoins();
+		//AddCoins();
 	}
 
 	void AddCoins()

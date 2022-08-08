@@ -1,0 +1,4 @@
+#Mon Aug 08 15:32:29 IST 2022
+base.0=/Users/ilovepizza/Project Development/Garvish Projects/in-house-car-chase-/In-House---Car-Battle-Project-main/Temp/gradleOut/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

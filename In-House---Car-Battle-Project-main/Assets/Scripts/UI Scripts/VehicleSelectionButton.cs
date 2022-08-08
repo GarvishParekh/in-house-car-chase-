@@ -14,15 +14,24 @@ public class VehicleSelectionButton : MonoBehaviour, IPointerClickHandler
 	public Image Im_Lock;
 	public TextMeshProUGUI T_VehicleName;
 
+	[SerializeField] bool interactable = true;
 
 	public static Action<int, int> OnVehicleSelectionButtonClicked;
 
 
-    private void Start()
+    private void Awake()
     {
 		GetVehicalInfo();
     }
 
+	void Start ()
+    {
+		if (!interactable)
+        {
+			enabled = false;
+        }
+    }
+	
     private void OnEnable()
     {
 		VehicleSelection_UI.UpdateBuyUI += GetVehicalInfo;
