@@ -27,11 +27,9 @@ public class VehicleSelectionButton : MonoBehaviour, IPointerClickHandler
 	void Start ()
     {
 		if (!interactable)
-        {
 			enabled = false;
-        }
     }
-	
+
     private void OnEnable()
     {
 		VehicleSelection_UI.UpdateBuyUI += GetVehicalInfo;

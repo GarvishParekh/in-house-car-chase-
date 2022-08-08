@@ -138,9 +138,9 @@ public class PlayerCarExplosion : MonoBehaviour
 			BodyParts[0].material.color = ColDark;
 
 			Time.timeScale = 0.2f;
-
-			SetTimeScale = true; // start timer for setting normal timescale again
-			SetDragValue = true; // start timer for setting normal drag value
+				
+			SetTimeScale = true;	// start timer for setting normal timescale again
+			SetDragValue = true;	// start timer for setting normal drag value
 
 			if(W_Mesh_FL.GetComponent<MeshCollider>())
 			{

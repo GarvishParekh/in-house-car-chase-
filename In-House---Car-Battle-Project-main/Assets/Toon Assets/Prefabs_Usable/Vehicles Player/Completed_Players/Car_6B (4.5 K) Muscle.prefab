@@ -948,7 +948,7 @@ MonoBehaviour:
   - {fileID: 23225468408760994}
   - {fileID: 23950627565911402}
   - {fileID: 23919607841894234}
-  ColDark: {r: 0, g: 0, b: 0, a: 0}
+  ColDark: {r: 0.16862746, g: 0.16862746, b: 0.16862746, a: 1}
 --- !u!114 &114851942281974520
 MonoBehaviour:
   m_ObjectHideFlags: 0
