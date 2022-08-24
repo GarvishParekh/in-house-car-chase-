@@ -1194,6 +1194,8 @@ Transform:
   - {fileID: 9083768679274443718}
   - {fileID: 1782664762452506464}
   - {fileID: 1790633007857950072}
+  - {fileID: 6704105077024530322}
+  - {fileID: 3604020410739431441}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1362,6 +1364,112 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExploded: 0
+--- !u!1 &1768880387177208231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6704105077024530322}
+  - component: {fileID: 3048865033054190517}
+  m_Layer: 0
+  m_Name: Trail_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6704105077024530322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768880387177208231}
+  m_LocalRotation: {x: 0.000014867031, y: 0.000028423428, z: 0.000027738803, w: 1}
+  m_LocalPosition: {x: 0.6093, y: -0.346, z: -1.269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4465074398894068}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3048865033054190517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768880387177208231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b4f1fd2307ebd4481888845fc4f55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WheelStatus: 0
+  Wc: {fileID: 146728745469518532}
+  isPlayerCar: 1
+  PS: {fileID: 1879763042409321324}
+  Interval: 0.2
+  PlayerCar: {fileID: 114018380948348218}
+  SmokeDensity1: 12
+  SmokeDensity2: 34
+  SmokeDensity3: 45
+  MyTrail: {fileID: 0}
+--- !u!1 &6970230161987722630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3604020410739431441}
+  - component: {fileID: 4663728487884918821}
+  m_Layer: 0
+  m_Name: Trail_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3604020410739431441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970230161987722630}
+  m_LocalRotation: {x: 0.000014867031, y: 0.000028423428, z: 0.000027738803, w: 1}
+  m_LocalPosition: {x: -0.6093, y: -0.346, z: -1.269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4465074398894068}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4663728487884918821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970230161987722630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b4f1fd2307ebd4481888845fc4f55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WheelStatus: 0
+  Wc: {fileID: 146992402631232202}
+  isPlayerCar: 1
+  PS: {fileID: 1906070911636735654}
+  Interval: 0.2
+  PlayerCar: {fileID: 114018380948348218}
+  SmokeDensity1: 12
+  SmokeDensity2: 34
+  SmokeDensity3: 45
+  MyTrail: {fileID: 0}
 --- !u!1001 &3422087647343330115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1689,6 +1797,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7591202485837969476}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1906070911636735654 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8298699344366747362, guid: 0b753dcea3a144cc1ad66ee775b00eb0,
+    type: 3}
+  m_PrefabInstance: {fileID: 7591202485837969476}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8359897782174968556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1771,6 +1885,12 @@ PrefabInstance:
 --- !u!4 &1790633007857950072 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7844647704476727188, guid: 7c176c1ef8bf6444caf02c19dc5faf82,
+    type: 3}
+  m_PrefabInstance: {fileID: 8359897782174968556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1879763042409321324 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7931419737557989760, guid: 7c176c1ef8bf6444caf02c19dc5faf82,
     type: 3}
   m_PrefabInstance: {fileID: 8359897782174968556}
   m_PrefabAsset: {fileID: 0}
