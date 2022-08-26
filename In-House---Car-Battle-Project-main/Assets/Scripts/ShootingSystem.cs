@@ -1,20 +1,23 @@
+using TMPro;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class ShootingSystem : MonoBehaviour
 {
-    WaitForSeconds pointTwo = new WaitForSeconds(0.1f);
-    WaitForSeconds pointFive = new WaitForSeconds(0.5f);
+    public static ShootingSystem instance;
+    public static Action Shoot;
+
+    [SerializeField] TMP_Text fireRateinfo;
+    [SerializeField] TMP_Text Damageinfo;
 
     [Header ("Components")]
-    [SerializeField] Transform target;
-    [SerializeField] GameObject bullet;
-    [SerializeField] GameObject actionLines;
-    [SerializeField] Transform muzzleFlash;
-    [SerializeField] Transform sparkEffect;
+    public Transform target;
+    public Transform muzzleFlash;
     [SerializeField] Transform radiusCollider;
     [SerializeField] Slider radiusSlider;
+    [SerializeField] Slider damageSlider;
+    [SerializeField] Slider fireRateSlider;
 
     [Space]
     [SerializeField] LineRenderer line;
@@ -26,6 +29,12 @@ public class ShootingSystem : MonoBehaviour
     [SerializeField] Vector3 radiusVector;
     [Space]
     [SerializeField] bool changeRadius = false;
+
+    [Header("Gun information")]
+    [Range (0.1f, 3f)]
+    [SerializeField] float fireRate;
+    [SerializeField] float damage;
+    [SerializeField] float timer;
 
     private void OnEnable()
     {
@@ -39,8 +48,15 @@ public class ShootingSystem : MonoBehaviour
         RangeFunction.TragetLost -= OnTargerLost;
     }
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
+        timer = fireRate;
+
         radiusVector.x = radius;
         radiusVector.y = radius;
         radiusVector.z = radius;
@@ -52,8 +68,24 @@ public class ShootingSystem : MonoBehaviour
         if (changeRadius is true)
             ChangeRadius(radiusSlider.value);
 
-        if (Input.GetKeyDown(KeyCode.Space))
-            _ShootFunction();
+        fireRate = fireRateSlider.value;
+        fireRateinfo.text = fireRate.ToString("0.00");
+
+        damage = damageSlider.value;
+        Damageinfo.text = damage.ToString();
+
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //_ShootFunction();
+
+        if (target)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                _ShootFunction();
+                timer = fireRate;
+            }
+        }
     }
 
     private void ChangeRadius (float L_radius)
@@ -71,24 +103,14 @@ public class ShootingSystem : MonoBehaviour
 
     public void _ShootFunction ()
     {
-        if (target != null)
-            StartCoroutine(nameof(ShowActionLines));
+        if (target)
+            ShowActionLines();
     }
 
-    IEnumerator ShowActionLines ()
+    void ShowActionLines ()
     {
-        line.SetPosition(0, muzzleFlash.position);
-        line.SetPosition(1, target.position);
-        sparkEffect.position = target.position;
-        sparkEffect.gameObject.SetActive(false);
-        sparkEffect.gameObject.SetActive(true);
-
-        actionLines.SetActive(true);
-
-        yield return pointTwo;
-        actionLines.SetActive(false);
-
-        yield return pointFive;
-        sparkEffect.gameObject.SetActive(false);
+        ObjectPooler.instance.SpawnObject("Hit", target.position, Quaternion.identity);
+        ObjectPooler.instance.SpawnObject("ActionLines", Vector3.zero, Quaternion.identity);
+        Shoot?.Invoke();
     }
 }
