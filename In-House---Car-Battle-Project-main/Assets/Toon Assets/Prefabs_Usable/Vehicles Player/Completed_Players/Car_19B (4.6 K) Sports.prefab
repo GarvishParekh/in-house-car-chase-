@@ -1092,6 +1092,7 @@ Transform:
   - {fileID: 5838669543082815107}
   - {fileID: 3809360059649602287}
   - {fileID: 542725285573580916}
+  - {fileID: 4547385450795539352}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1188,8 +1189,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  brakeForce: 1500
-  steerAngle: 50
+  brakeForce: 9000
+  steerAngle: 45
   steerSpeed: 0.2
   centerOfMass: {fileID: 4260996288843454}
   steering: 0
@@ -1201,17 +1202,17 @@ MonoBehaviour:
   isLeft: 0
   isRight: 0
   isExploded: 0
-  BoostForce: 130
-  MaxSpeed: 190
+  BoostForce: 90
+  MaxSpeed: 150
   isBoosting: 0
-  BoostMaxSpeed: 200
+  BoostMaxSpeed: 170
   BoostCharage: 40
   BoostDischarge: 20
   BoosterValue: 0
   BoosterBar: {fileID: 0}
   Booster1: {fileID: 4872088582846388374}
   Booster2: {fileID: 6320097804987340872}
-  ExtraDrag: 0
+  ExtraDrag: 3
   isBreaking: 0
 --- !u!114 &114629257847833066
 MonoBehaviour:
@@ -1615,6 +1616,36 @@ MonoBehaviour:
   SmokeDensity2: 35
   SmokeDensity3: 45
   MyTrail: {fileID: 0}
+--- !u!1 &3420436721400534266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4547385450795539352}
+  m_Layer: 0
+  m_Name: WeaponPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4547385450795539352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3420436721400534266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.811, z: 0.119}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4181978994193038}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8044740964120229033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,15 +1859,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4f63bd69dcbd4b07b4ccc6ef8f8db76, type: 3}
---- !u!4 &4706901150301345082 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5840788640953528233, guid: e4f63bd69dcbd4b07b4ccc6ef8f8db76,
-    type: 3}
-  m_PrefabInstance: {fileID: 1179067868713400979}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &4872088582846388374 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6035317432224489989, guid: e4f63bd69dcbd4b07b4ccc6ef8f8db76,
+    type: 3}
+  m_PrefabInstance: {fileID: 1179067868713400979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4706901150301345082 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5840788640953528233, guid: e4f63bd69dcbd4b07b4ccc6ef8f8db76,
     type: 3}
   m_PrefabInstance: {fileID: 1179067868713400979}
   m_PrefabAsset: {fileID: 0}
@@ -1914,15 +1945,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b753dcea3a144cc1ad66ee775b00eb0, type: 3}
---- !u!4 &6329203600790423642 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8206704594134847268, guid: 0b753dcea3a144cc1ad66ee775b00eb0,
-    type: 3}
-  m_PrefabInstance: {fileID: 2752204584457193342}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &6132544147270859164 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 8298699344366747362, guid: 0b753dcea3a144cc1ad66ee775b00eb0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2752204584457193342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6329203600790423642 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8206704594134847268, guid: 0b753dcea3a144cc1ad66ee775b00eb0,
     type: 3}
   m_PrefabInstance: {fileID: 2752204584457193342}
   m_PrefabAsset: {fileID: 0}

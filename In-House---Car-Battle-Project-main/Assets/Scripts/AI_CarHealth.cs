@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 // This script manages
@@ -11,6 +12,10 @@ using UnityEngine.UI;
 
 public class AI_CarHealth : MonoBehaviour 
 {
+
+	public static Action AIDestroy;
+
+
 	[Header("Display Healthbar")]
 
 	private Camera Cam;
@@ -56,6 +61,10 @@ public class AI_CarHealth : MonoBehaviour
 	}
 
 	public Car_State CarState;
+
+	[Header("After Losing")]
+	[SerializeField] GameObject normalBody;
+	[SerializeField] GameObject afterDeathBody;
 
 	void OnEnable()
 	{
@@ -169,7 +178,7 @@ public class AI_CarHealth : MonoBehaviour
 		LookArrow.localEulerAngles = Vector3.zero;
 	}
 
-	void OnDamageOccur(int DmgPoints)
+	public void OnDamageOccur(int DmgPoints)
 	{
 		HP -= DmgPoints;
 

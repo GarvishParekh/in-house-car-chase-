@@ -1,16 +1,16 @@
-using TMPro;
+//using TMPro;
 using System;
 using UnityEngine;
 
 public class RangeFunction : MonoBehaviour
 {
     public static Action<Transform> TargetLocked;
-    public static Action TragetLost;
+    public static Action<Transform> TragetLost;
 
     [SerializeField] string AiCarString;
 
-    [Header ("Info")]
-    [SerializeField] TMP_Text T_targetInfo;
+    //[Header ("Info")]
+    //[SerializeField] TMP_Text T_targetInfo;
 
 
 
@@ -19,7 +19,7 @@ public class RangeFunction : MonoBehaviour
         if (Info.CompareTag(AiCarString))
         {
             TargetLocked?.Invoke(Info.transform);
-            T_targetInfo.text = ($"Target Locked");
+            //T_targetInfo.text = ($"Target Locked");
         }
     }
 
@@ -27,8 +27,8 @@ public class RangeFunction : MonoBehaviour
     {
         if (Info.CompareTag(AiCarString))
         {
-            TragetLost?.Invoke();
-            T_targetInfo.text = ($"Target Lost");
+            TragetLost?.Invoke(Info.transform);
+            //T_targetInfo.text = ($"Target Lost");
         }
     }
 }

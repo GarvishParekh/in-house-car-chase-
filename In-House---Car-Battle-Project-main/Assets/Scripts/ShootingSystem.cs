@@ -2,50 +2,71 @@ using TMPro;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class ShootingSystem : MonoBehaviour
 {
     public static ShootingSystem instance;
     public static Action Shoot;
 
-    [SerializeField] TMP_Text fireRateinfo;
-    [SerializeField] TMP_Text Damageinfo;
+    [Space]
+    //[SerializeField] TMP_Text fireRateinfo;
+    //[SerializeField] TMP_Text Damageinfo;
 
-    [Header ("Components")]
-    public Transform target;
-    public Transform muzzleFlash;
-    [SerializeField] Transform radiusCollider;
-    [SerializeField] Slider radiusSlider;
-    [SerializeField] Slider damageSlider;
+    [Header("Components")]
+    [SerializeField] LayerMask enemyLayer;
+    public Transform target;                    // enemy car to air
+    public Vector3 hitPosition;                    // enemy car to air
+    public Transform muzzleFlash;               // bullet starting point
+    [SerializeField] Transform weaponPlace;
+    [SerializeField] Transform radiusCollider;  // radius for finding the enemy
+
+    /*
+    [Header ("Sliders ref")]
+    [SerializeField] Slider radiusSlider;       
     [SerializeField] Slider fireRateSlider;
+    [SerializeField] Slider damageSlider;
+    */
+
+    [Header("Enemy Info")]
+    public List<Transform> enemies = new List<Transform>();    
+    
+    [SerializeField] float enemyCheckRate = 20f;
+    [SerializeField] float enemyCheckTimer = 20f;
 
     [Space]
-    [SerializeField] LineRenderer line;
-
-    [Space]
-    [Header("Components info")]
-    [Range(1f, 20f)]
-    [SerializeField] float radius = 1;
-    [SerializeField] Vector3 radiusVector;
-    [Space]
+    [Header("Config info")]
+    private Vector3 radiusVector;
     [SerializeField] bool changeRadius = false;
 
-    [Header("Gun information")]
+    [Header("Weapon Config")]
+    [SerializeField] bool canShoot = false;
+
+    [Range(1f, 100f)]
+    [SerializeField] float radius = 1;
+
     [Range (0.1f, 3f)]
     [SerializeField] float fireRate;
+
+    [Range (1, 100)]
     [SerializeField] float damage;
+    
+    [Range (1f, 20f)]
+    [SerializeField] float accuracy;
     [SerializeField] float timer;
 
     private void OnEnable()
     {
         RangeFunction.TargetLocked += OnTargerLocked;
         RangeFunction.TragetLost += OnTargerLost;
+        AI_CarHealth.AIDestroy += ClearTarget;
     }
 
     private void OnDisable()
     {
         RangeFunction.TargetLocked -= OnTargerLocked;
         RangeFunction.TragetLost -= OnTargerLost;
+        AI_CarHealth.AIDestroy -= ClearTarget;
     }
 
     private void Awake()
@@ -55,37 +76,100 @@ public class ShootingSystem : MonoBehaviour
 
     private void Start()
     {
+        weaponPlace = GameObject.Find("WeaponPlace").transform;
+        transform.parent = weaponPlace;
+        transform.position = weaponPlace.position;
         timer = fireRate;
 
         radiusVector.x = radius;
         radiusVector.y = radius;
         radiusVector.z = radius;
         radiusCollider.localScale = radiusVector;
+
+        GetClosestEnemy();
     }
 
     private void Update()
     {
-        if (changeRadius is true)
-            ChangeRadius(radiusSlider.value);
+        if (changeRadius == true)
+            ChangeRadius(radius);
 
-        fireRate = fireRateSlider.value;
-        fireRateinfo.text = fireRate.ToString("0.00");
-
+        /*
         damage = damageSlider.value;
         Damageinfo.text = damage.ToString();
 
         //if (Input.GetKeyDown(KeyCode.Space))
         //_ShootFunction();
+        */
 
+        GetEnemy();
         if (target)
         {
+            LookATarget(target.position);
+            //CheckIfLookingAtTarget();
+
+            if (!canShoot)
+                return;
+
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
+                if(enemies != null)
                 _ShootFunction();
                 timer = fireRate;
             }
         }
+    }
+
+    void GetEnemy()
+    {
+        enemyCheckTimer -= Time.deltaTime;
+        if (enemyCheckTimer <= 0)
+        {
+            enemyCheckTimer = enemyCheckRate;
+            target = GetClosestEnemy();
+        }
+    }
+
+    Transform GetClosestEnemy()
+    {
+        if (enemies.Count == 0)
+            return null;
+
+        Transform bestTarget = null;
+        float closestDistanceSqr = Mathf.Infinity;
+        Vector3 currentPosition = transform.position;
+        foreach (Transform potentialTarget in enemies)
+        {
+            Vector3 directionToTarget = potentialTarget.position - currentPosition;
+            float dSqrToTarget = directionToTarget.sqrMagnitude;
+            if (dSqrToTarget < closestDistanceSqr)
+            {
+                closestDistanceSqr = dSqrToTarget;
+                bestTarget = potentialTarget;
+            }
+        }
+        return bestTarget;
+    }
+
+    void CheckIfLookingAtTarget ()
+    {
+        RaycastHit ray;
+        if (Physics.Raycast(muzzleFlash.localPosition, transform.forward, out ray))
+        {
+            Debug.Log($"{ray.collider.gameObject.name}");
+            if (ray.collider.gameObject.name == target.name)
+            {
+                canShoot = true;
+            }else canShoot = false;
+        }
+    }
+
+    void LookATarget (Vector3 targetVector)
+    {
+        Vector3 lookVector = targetVector - transform.position;
+        Quaternion direction = Quaternion.LookRotation(lookVector);
+        transform.rotation = Quaternion.Lerp(transform.rotation, direction, accuracy * Time.deltaTime);
     }
 
     private void ChangeRadius (float L_radius)
@@ -96,9 +180,21 @@ public class ShootingSystem : MonoBehaviour
         radiusCollider.localScale = radiusVector;
     }
 
-    void OnTargerLocked(Transform l_targert) => target = l_targert;
+    void OnTargerLocked(Transform l_targert)
+    {
+        enemies.Add(l_targert);
+        target = GetClosestEnemy();
+    }
 
-    void OnTargerLost() => target = null;
+
+    void OnTargerLost(Transform l_Traget)
+    {
+        enemies.Remove(l_Traget);
+        if (enemies.Count == 0)
+        {
+            target = null;
+        }
+    }
 
 
     public void _ShootFunction ()
@@ -109,8 +205,17 @@ public class ShootingSystem : MonoBehaviour
 
     void ShowActionLines ()
     {
-        ObjectPooler.instance.SpawnObject("Hit", target.position, Quaternion.identity);
+        RaycastHit ray;
+        if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, 900, enemyLayer))
+        {
+            Debug.Log("Name:" + ray.collider.name);
+            hitPosition = ray.point;
+        }
+        ObjectPooler.instance.SpawnObject("Hit", hitPosition, Quaternion.identity);
         ObjectPooler.instance.SpawnObject("ActionLines", Vector3.zero, Quaternion.identity);
         Shoot?.Invoke();
+        target.GetComponentInParent<AI_CarHealth>().OnDamageOccur(20);
     }
+
+    void ClearTarget() => target = null;
 }
