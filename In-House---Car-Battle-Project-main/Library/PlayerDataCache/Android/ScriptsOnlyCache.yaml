@@ -1700,5 +1700,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Preloader.unity
   - Assets/Scenes/ArmoryShop.unity
   - Assets/Scenes/GamePlay_NoMountains.unity
-  playerPath: /Volumes/The Intellify/Dhaval/Projects/Garvish/Projects/Git Hub/In-House-Car-Chase/in-house-car-chase-/In-House---Car-Battle-Project-main/Car
+  playerPath: /Volumes/The Intellify/Dhaval/Projects/Garvish/Projects/Git Hub/In-House-Car-Chase/in-house-car-chase-/In-House---Car-Battle-Project-main/Builds/Car
     Chase V0.2.apk

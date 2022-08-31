@@ -67,6 +67,7 @@ public class DeviceInput : MonoBehaviour
 	{
 		if(OnRightDown != null && !isExploaded)
 		{
+			Debug.Log("Event called");
 			OnRightDown();
 		}
 	}

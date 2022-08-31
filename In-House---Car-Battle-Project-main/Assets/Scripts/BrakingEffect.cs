@@ -32,7 +32,7 @@ public class BrakingEffect : MonoBehaviour
 	public LensFlare Flare1;
 	public LensFlare Flare2;
 
-	private float DefaultBrightness;
+	private float DefaultBrightness = 1;
 	public bool isEditor;
 
 	public MyCameraFollow.Cam_Positions CamPosition;
@@ -63,9 +63,10 @@ public class BrakingEffect : MonoBehaviour
 
 	void Start () 
 	{
-		DefaultBrightness = Flare1.brightness;
+		DefaultBrightness = 1;
 		Brake_OFF();
 
+		/*
 		if(Application.platform == RuntimePlatform.WindowsEditor)
 		{
 			isEditor = true;
@@ -74,12 +75,14 @@ public class BrakingEffect : MonoBehaviour
 		{
 			isEditor = false;
 		}
+		*/
 	}
 
 
 
 	void OnLeftUp()
 	{
+		Debug.Log("Breking effect: Left");
 		isLeft = false;
 		UpdateCarVisuals();
 	}
@@ -103,7 +106,6 @@ public class BrakingEffect : MonoBehaviour
 	}
 
 
-
 	void UpdateCarVisuals()
 	{
 		if(CamPosition == MyCameraFollow.Cam_Positions.Racing)
@@ -120,7 +122,7 @@ public class BrakingEffect : MonoBehaviour
 		else
 		{
 			if(isBreaking) // Check if the breaking effect is ON when Top View camera is enabled, turn it off.
-			{
+            {
 				Brake_OFF();
 			}
 		}
@@ -158,7 +160,7 @@ public class BrakingEffect : MonoBehaviour
 		}
 		else
 		{
-
+			// null
 		}
 	}
 
