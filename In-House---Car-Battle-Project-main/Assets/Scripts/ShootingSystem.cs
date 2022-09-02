@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 public class ShootingSystem : MonoBehaviour
 {
+    ObjectPooler objectPool;
     public static ShootingSystem instance;
     public static Action Shoot;
 
@@ -76,6 +77,7 @@ public class ShootingSystem : MonoBehaviour
 
     private void Start()
     {
+        objectPool = ObjectPooler.instance;
         weaponPlace = GameObject.Find("WeaponPlace").transform;
         transform.parent = weaponPlace;
         transform.position = weaponPlace.position;
@@ -211,8 +213,14 @@ public class ShootingSystem : MonoBehaviour
             Debug.Log("Name:" + ray.collider.name);
             hitPosition = ray.point;
         }
-        ObjectPooler.instance.SpawnObject("Hit", hitPosition, Quaternion.identity);
-        ObjectPooler.instance.SpawnObject("ActionLines", Vector3.zero, Quaternion.identity);
+        // spawn hit effect on the enemy car
+        objectPool.SpawnObject("Hit", hitPosition, Quaternion.identity, true);
+
+        // spawn action lines from the weapon
+        objectPool.SpawnObject("ActionLines", Vector3.zero, Quaternion.identity, true);
+
+        // spawn muzzle flash from the weapon
+        objectPool.SpawnObject("MuzzleFlash", muzzleFlash.position, Quaternion.identity, false);
         Shoot?.Invoke();
         target.GetComponentInParent<AI_CarHealth>().OnDamageOccur(20);
     }
