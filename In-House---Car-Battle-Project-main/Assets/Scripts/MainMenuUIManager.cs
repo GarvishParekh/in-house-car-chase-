@@ -63,6 +63,5 @@ public class MainMenuUIManager : MonoBehaviour
         {
             VehicleCanvas[i].SetActive(true);
         }
-
     }
 }

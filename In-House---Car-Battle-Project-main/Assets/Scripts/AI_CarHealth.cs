@@ -13,7 +13,7 @@ using UnityEngine.UI;
 public class AI_CarHealth : MonoBehaviour 
 {
 
-	public static Action AIDestroy;
+	public static Action<Transform> AIDestroy;
 
 
 	[Header("Display Healthbar")]
@@ -61,10 +61,6 @@ public class AI_CarHealth : MonoBehaviour
 	}
 
 	public Car_State CarState;
-
-	[Header("After Losing")]
-	[SerializeField] GameObject normalBody;
-	[SerializeField] GameObject afterDeathBody;
 
 	void OnEnable()
 	{
@@ -178,6 +174,8 @@ public class AI_CarHealth : MonoBehaviour
 		LookArrow.localEulerAngles = Vector3.zero;
 	}
 
+	[Header("After Losing")]
+	[SerializeField] Transform objectToDequeue;
 	public void OnDamageOccur(int DmgPoints)
 	{
 		HP -= DmgPoints;
@@ -188,6 +186,8 @@ public class AI_CarHealth : MonoBehaviour
 			CA.Stop_AI_Behavior();
 			ACE.OnExplosion();
 			OnThisCarExploaded();
+			objectToDequeue.tag = "Player";
+			AIDestroy?.Invoke(objectToDequeue);
 		}
 
 		HealthBar.fillAmount = (HP / UnitHealth) * 0.01f;

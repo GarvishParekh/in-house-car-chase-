@@ -54,8 +54,8 @@ public class AICarExplosion : MonoBehaviour
 		if(!AiCar.isExploded)
 		{
 			AiCar.isExploded = true;
-			_RB.drag = 1.2f;
-			_RB.centerOfMass = COM_Explosion.localPosition;
+			_RB.drag = .23f;
+            _RB.centerOfMass = COM_Explosion.localPosition;
 
 			_RB.AddExplosionForce(ExplosionPower * 1.3f, ExplosionPos.position, ExplosionRange, 1.0f, FM);
 

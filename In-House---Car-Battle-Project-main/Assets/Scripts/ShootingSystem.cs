@@ -50,11 +50,14 @@ public class ShootingSystem : MonoBehaviour
     [SerializeField] float fireRate;
 
     [Range (1, 100)]
-    [SerializeField] float damage;
+    [SerializeField] int damage;
     
     [Range (1f, 20f)]
     [SerializeField] float accuracy;
     [SerializeField] float timer;
+
+    [Header("Weapons")]
+    [SerializeField] GameObject[] weapons;
 
     private void OnEnable()
     {
@@ -89,6 +92,38 @@ public class ShootingSystem : MonoBehaviour
         radiusCollider.localScale = radiusVector;
 
         GetClosestEnemy();
+
+        int weaponSelected = PlayerPrefs.GetInt("Selected Weapon", -1);
+
+        if (weaponSelected != -1)
+        {
+            ChangeWeaponSettings(weaponSelected);
+            weapons[weaponSelected].SetActive(true);
+        }
+    }
+
+    void ChangeWeaponSettings(int _weaponSelected)
+    {
+        if (_weaponSelected == 0)
+        {
+            fireRate = 0.85f;
+            damage = 5;
+        }
+        else if (_weaponSelected == 1)
+        {
+            fireRate = 0.3f;
+            damage = 3;
+        }
+        else if (_weaponSelected == 2)
+        {
+            fireRate = 0.66f;
+            damage = 12;
+        }
+        else if (_weaponSelected == 3)
+        {
+            fireRate = 1.2f;
+            damage = 17;
+        }
     }
 
     private void Update()
@@ -110,6 +145,7 @@ public class ShootingSystem : MonoBehaviour
             LookATarget(target.position);
             //CheckIfLookingAtTarget();
 
+            CheckIfLookingAtTarget();
             if (!canShoot)
                 return;
 
@@ -121,7 +157,15 @@ public class ShootingSystem : MonoBehaviour
                 timer = fireRate;
             }
         }
+
+        else
+        {
+            lerpSpeed = Mathf.MoveTowards(0, 1, 3 * Time.deltaTime);
+            transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(0, 0, 0), lerpSpeed);
+        }
     }
+    float lerpSpeed = 0;
+
 
     void GetEnemy()
     {
@@ -157,14 +201,16 @@ public class ShootingSystem : MonoBehaviour
     void CheckIfLookingAtTarget ()
     {
         RaycastHit ray;
-        if (Physics.Raycast(muzzleFlash.localPosition, transform.forward, out ray))
+        if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, radius, enemyLayer))
         {
             Debug.Log($"{ray.collider.gameObject.name}");
-            if (ray.collider.gameObject.name == target.name)
+            if (ray.collider.gameObject.name.Equals(target.name))
             {
                 canShoot = true;
-            }else canShoot = false;
+            }
         }
+        else
+            canShoot = false;
     }
 
     void LookATarget (Vector3 targetVector)
@@ -198,7 +244,6 @@ public class ShootingSystem : MonoBehaviour
         }
     }
 
-
     public void _ShootFunction ()
     {
         if (target)
@@ -222,8 +267,13 @@ public class ShootingSystem : MonoBehaviour
         // spawn muzzle flash from the weapon
         objectPool.SpawnObject("MuzzleFlash", muzzleFlash.position, Quaternion.identity, false);
         Shoot?.Invoke();
-        target.GetComponentInParent<AI_CarHealth>().OnDamageOccur(20);
+        target.GetComponentInParent<AI_CarHealth>().OnDamageOccur(damage);
     }
 
-    void ClearTarget() => target = null;
+    void ClearTarget(Transform objectToDequeue)
+    {
+        lerpSpeed = 0;
+        target = null;
+        enemies.Remove(objectToDequeue);
+    }
 }
