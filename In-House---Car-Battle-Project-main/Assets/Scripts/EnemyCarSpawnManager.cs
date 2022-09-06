@@ -1,0 +1,85 @@
+using UnityEngine;
+
+public class EnemyCarSpawnManager : MonoBehaviour
+{
+    [SerializeField] Transform[] spawnPlaces;
+    [SerializeField] Transform carSpawnParent;
+
+    public enum GameLevel
+    {
+        Easy,
+        Medium,
+        DarkSouls,
+    }
+
+    public GameLevel gameLevel;
+
+    [System.Serializable]
+    public class EnemyCar
+    {
+        public GameObject[] level1;
+        public GameObject[] level2;
+        public GameObject[] level3;
+    }
+    [SerializeField] EnemyCar enemyCar;
+
+    [SerializeField] int levelIndex = 1;
+    [SerializeField] int carCount = 0;
+
+    private void OnEnable()
+    {
+        AI_CarHealth.CarAdded += AddCar;
+        AI_CarHealth.AIDestroy += CheckLiveCars;
+    }
+
+    private void OnDisable()
+    {
+        AI_CarHealth.CarAdded -= AddCar;
+        AI_CarHealth.AIDestroy -= CheckLiveCars;
+    }
+
+    void SpawnCars() => SpawnFunction(gameLevel);
+
+    #region Spawn Function
+    void SpawnFunction (GameLevel _level)
+    {
+        if (_level == GameLevel.Easy)
+        {
+            int spawnType = Random.Range(0, enemyCar.level1.Length);
+            int spawnPlaceCount = Random.Range(0, spawnPlaces.Length);
+
+            GameObject objectToSpawn = enemyCar.level1[spawnType];
+            Instantiate(objectToSpawn, spawnPlaces[spawnPlaceCount].position, Quaternion.identity, carSpawnParent);
+        }
+
+        else if (_level == GameLevel.Medium)
+        {
+            int spawnType = Random.Range(0, enemyCar.level2.Length);
+            int spawnPlaceCount = Random.Range(0, spawnPlaces.Length);
+
+            GameObject objectToSpawn = enemyCar.level2[spawnType];
+            Instantiate(objectToSpawn, spawnPlaces[spawnPlaceCount].position, Quaternion.identity, carSpawnParent);
+        }
+
+        else if (_level == GameLevel.DarkSouls)
+        {
+            int spawnType = Random.Range(0, enemyCar.level3.Length);
+            int spawnPlaceCount = Random.Range(0, spawnPlaces.Length);
+
+            GameObject objectToSpawn = enemyCar.level3[spawnType];
+            Instantiate(objectToSpawn, spawnPlaces[spawnPlaceCount].position, Quaternion.identity, carSpawnParent);
+        }
+    }
+    #endregion
+
+    void CheckLiveCars (Transform t)
+    {
+        carCount--;
+        if (carCount <= 2)
+        {
+            SpawnCars();
+        }
+    }
+
+    void AddCar() => carCount++;
+}

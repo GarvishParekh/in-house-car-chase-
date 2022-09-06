@@ -201,7 +201,7 @@ public class ShootingSystem : MonoBehaviour
     void CheckIfLookingAtTarget ()
     {
         RaycastHit ray;
-        if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, radius, enemyLayer))
+        if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, 500, enemyLayer))
         {
             Debug.Log($"{ray.collider.gameObject.name}");
             if (ray.collider.gameObject.name.Equals(target.name))
@@ -253,7 +253,7 @@ public class ShootingSystem : MonoBehaviour
     void ShowActionLines ()
     {
         RaycastHit ray;
-        if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, 900, enemyLayer))
+        if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, 500, enemyLayer))
         {
             Debug.Log("Name:" + ray.collider.name);
             hitPosition = ray.point;

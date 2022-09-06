@@ -13,6 +13,7 @@ using UnityEngine.UI;
 public class AI_CarHealth : MonoBehaviour 
 {
 
+	public static Action CarAdded;
 	public static Action<Transform> AIDestroy;
 
 
@@ -76,6 +77,7 @@ public class AI_CarHealth : MonoBehaviour
 
 	void Start ()
 	{
+		CarAdded?.Invoke();
 		ArrowHolder = GameObject.FindWithTag("ArrowsHolder").transform;
 		Cam = Camera.main;
 		ACE = GetComponent<AICarExplosion>();
