@@ -169,6 +169,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010765064010, guid: d4ebdc08b5dea4e85be86342b70f16f4, type: 3}
+      propertyPath: m_TagString
+      value: Car_AI
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013456260542, guid: d4ebdc08b5dea4e85be86342b70f16f4, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -213,6 +217,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3328406280883742287, guid: d4ebdc08b5dea4e85be86342b70f16f4,
+        type: 3}
+      propertyPath: MaxSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7391447987720972404, guid: d4ebdc08b5dea4e85be86342b70f16f4,
         type: 3}
       propertyPath: m_Enabled
@@ -222,7 +231,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 356692130}
+      objectReference: {fileID: 1437755341}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ebdc08b5dea4e85be86342b70f16f4, type: 3}
 --- !u!4 &106134230 stripped
@@ -697,42 +706,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!84 &356692130
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!4 &368747224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010392716436, guid: afe89e60e06fe43e6b558ab480dbc64c,
@@ -1169,6 +1142,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445368407}
   m_CullTransparentMesh: 1
+--- !u!84 &454736793
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &458799628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,42 +2173,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687487984}
   m_CullTransparentMesh: 1
---- !u!84 &715714534
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &839451653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,7 +2183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 839451655}
   - component: {fileID: 839451654}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -2243,9 +2216,10 @@ MonoBehaviour:
   changeRadius: 1
   canShoot: 0
   radius: 100
+  range: 1000
   fireRate: 1.2
   damage: 12
-  accuracy: 7.8
+  accuracy: 1.2
   timer: 0
   weapons:
   - {fileID: 1920400107}
@@ -2360,6 +2334,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013264169742, guid: afe89e60e06fe43e6b558ab480dbc64c, type: 3}
+      propertyPath: m_TagString
+      value: Car_AI
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010392716436, guid: afe89e60e06fe43e6b558ab480dbc64c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2413,7 +2391,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1025844572}
+      objectReference: {fileID: 1373248489}
+    - target: {fileID: 9115816023574240965, guid: afe89e60e06fe43e6b558ab480dbc64c,
+        type: 3}
+      propertyPath: MaxSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe89e60e06fe43e6b558ab480dbc64c, type: 3}
 --- !u!1 &918584964
@@ -2460,42 +2443,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!84 &932838520
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &950016800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2685,42 +2632,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!84 &1025844572
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1030484403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,7 +2641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1030484404}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: WeaponSpawnPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2921,13 +2832,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1875413822}
     m_Modifications:
+    - target: {fileID: 133976, guid: f9ed7f4ad4e333f458008ef169b8efd8, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 140298, guid: f9ed7f4ad4e333f458008ef169b8efd8, type: 3}
       propertyPath: m_Name
       value: Tommy_Gun 1
       objectReference: {fileID: 0}
     - target: {fileID: 140298, guid: f9ed7f4ad4e333f458008ef169b8efd8, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 140298, guid: f9ed7f4ad4e333f458008ef169b8efd8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 167794, guid: f9ed7f4ad4e333f458008ef169b8efd8, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 458500, guid: f9ed7f4ad4e333f458008ef169b8efd8, type: 3}
       propertyPath: m_RootOrder
@@ -3010,6 +2933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI_2B (5 K) Van
       objectReference: {fileID: 0}
+    - target: {fileID: 1557598341534412, guid: 010b6e792d5db014595c20f3ac2dfd26, type: 3}
+      propertyPath: m_TagString
+      value: Car_AI
+      objectReference: {fileID: 0}
     - target: {fileID: 4448780121557134, guid: 010b6e792d5db014595c20f3ac2dfd26, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3063,11 +2990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 715714534}
+      objectReference: {fileID: 1619631543}
     - target: {fileID: 114082226322734292, guid: 010b6e792d5db014595c20f3ac2dfd26,
         type: 3}
       propertyPath: MaxSpeed
-      value: 70
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114269254526735696, guid: 010b6e792d5db014595c20f3ac2dfd26,
         type: 3}
@@ -3234,13 +3161,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1875413822}
     m_Modifications:
+    - target: {fileID: 166658, guid: 330bc37890559f0418aedb2f297d5a77, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 175516, guid: 330bc37890559f0418aedb2f297d5a77, type: 3}
       propertyPath: m_Name
       value: Mosin_Nagant 1
       objectReference: {fileID: 0}
     - target: {fileID: 175516, guid: 330bc37890559f0418aedb2f297d5a77, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 175516, guid: 330bc37890559f0418aedb2f297d5a77, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 182432, guid: 330bc37890559f0418aedb2f297d5a77, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 403858, guid: 330bc37890559f0418aedb2f297d5a77, type: 3}
       propertyPath: m_RootOrder
@@ -3465,6 +3404,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011057790652, guid: d94437dcaebba48418228acdefa25174, type: 3}
+      propertyPath: m_TagString
+      value: Car_AI
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011929840470, guid: d94437dcaebba48418228acdefa25174, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3518,12 +3461,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 932838520}
+      objectReference: {fileID: 454736793}
     - target: {fileID: 1068698979623423269, guid: d94437dcaebba48418228acdefa25174,
         type: 3}
       propertyPath: m_target
       value: 
       objectReference: {fileID: 371855481}
+    - target: {fileID: 5810898934744131898, guid: d94437dcaebba48418228acdefa25174,
+        type: 3}
+      propertyPath: MaxSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d94437dcaebba48418228acdefa25174, type: 3}
 --- !u!4 &1257709043 stripped
@@ -8486,6 +8434,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1102586901}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &1373248489
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1418793596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8594,6 +8578,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &1437755341
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1545074796
 GameObject:
   m_ObjectHideFlags: 0
@@ -8690,6 +8710,42 @@ Transform:
   m_Father: {fileID: 372497115}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &1619631543
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1637552401
 GameObject:
   m_ObjectHideFlags: 0
@@ -9651,7 +9707,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1851106397}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Muzzle Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9759,7 +9815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1875413822}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Weapons LIst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9791,9 +9847,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1875413822}
     m_Modifications:
+    - target: {fileID: 1033788159122670, guid: 82ed87b752244ef4ea24e14cb90aefe7, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 1916129190443134, guid: 82ed87b752244ef4ea24e14cb90aefe7, type: 3}
       propertyPath: m_Name
       value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129190443134, guid: 82ed87b752244ef4ea24e14cb90aefe7, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1916129190443134, guid: 82ed87b752244ef4ea24e14cb90aefe7, type: 3}
       propertyPath: m_IsActive
@@ -9883,7 +9947,7 @@ GameObject:
   - component: {fileID: 1981811926}
   - component: {fileID: 1981811925}
   - component: {fileID: 1981811924}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -10237,7 +10301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 61ce728efff2bd14abaab6ba419454f8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 61ce728efff2bd14abaab6ba419454f8, type: 3}
       propertyPath: m_IsActive
@@ -10245,19 +10309,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 61ce728efff2bd14abaab6ba419454f8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 61ce728efff2bd14abaab6ba419454f8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 61ce728efff2bd14abaab6ba419454f8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 61ce728efff2bd14abaab6ba419454f8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 61ce728efff2bd14abaab6ba419454f8, type: 3}
       propertyPath: m_RootOrder

@@ -69,6 +69,7 @@ public class Car_AI : MonoBehaviour
 	void Start()
 	{
 		_rb.isKinematic = true;
+		Target = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 
 	void ActivateRigidbody()

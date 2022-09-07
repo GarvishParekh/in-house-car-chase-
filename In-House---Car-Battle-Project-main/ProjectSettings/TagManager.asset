@@ -10,6 +10,7 @@ TagManager:
   - HealthBarPlane
   - ArrowsHolder
   - FxTemporaire
+  - AI_Body
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - OnlyShadows
   - Trees & Plants
   - Dont Show
-  - 
+  - Weapon
   - 
   - 
   - 

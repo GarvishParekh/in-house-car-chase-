@@ -45,6 +45,8 @@ public class ShootingSystem : MonoBehaviour
 
     [Range(1f, 100f)]
     [SerializeField] float radius = 1;
+    [Range(1f, 1000f)]
+    [SerializeField] float range;
 
     [Range (0.1f, 3f)]
     [SerializeField] float fireRate;
@@ -146,10 +148,10 @@ public class ShootingSystem : MonoBehaviour
             //CheckIfLookingAtTarget();
 
             CheckIfLookingAtTarget();
+            timer -= Time.deltaTime;
             if (!canShoot)
                 return;
 
-            timer -= Time.deltaTime;
             if (timer <= 0)
             {
                 if(enemies != null)
@@ -200,17 +202,17 @@ public class ShootingSystem : MonoBehaviour
 
     void CheckIfLookingAtTarget ()
     {
-        RaycastHit ray;
-        if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, 500, enemyLayer))
+        RaycastHit ray = new RaycastHit();
+        if (Physics.Raycast(transform.position, transform.forward, out ray, Mathf.Infinity, enemyLayer))
         {
-            Debug.Log($"{ray.collider.gameObject.name}");
-            if (ray.collider.gameObject.name.Equals(target.name))
-            {
+            Debug.Log($"{ray.collider.gameObject.layer}");
+            if (ray.collider.gameObject.CompareTag ("AI_Body"))
                 canShoot = true;
+            else
+            {
+                canShoot = false;
             }
         }
-        else
-            canShoot = false;
     }
 
     void LookATarget (Vector3 targetVector)
@@ -253,7 +255,7 @@ public class ShootingSystem : MonoBehaviour
     void ShowActionLines ()
     {
         RaycastHit ray;
-        if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, 500, enemyLayer))
+        if (Physics.Raycast(transform.position, transform.forward, out ray, Mathf.Infinity, enemyLayer))
         {
             Debug.Log("Name:" + ray.collider.name);
             hitPosition = ray.point;

@@ -50,6 +50,21 @@ namespace DynamicShadowProjector {
 		[SerializeField]
 		private bool m_followTarget = true;
 
+
+		public int garvish
+		{
+			get { return garvish; }
+			set
+            {
+				if (garvish == 10)
+                {
+					garvish = value;
+                }
+            }
+
+		}
+
+
 		// public properties
 		public Transform target
 		{
