@@ -657,7 +657,7 @@ MonoBehaviour:
   LookVector: {fileID: 4107367478007590500}
   CalculatedAngle: 0
   Distance: 0
-  MaxSpeed: 60
+  MaxSpeed: 65
 --- !u!114 &8506261391856927029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,8 +782,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.7894914, y: 1.6178522, z: 5.683216}
-  m_Center: {x: 0, y: 1.6703863, z: -0.039709568}
+  m_Size: {x: 2.7894914, y: 2.5279999, z: 5.683216}
+  m_Center: {x: 0, y: 1.2153125, z: -0.039709568}
 --- !u!1 &1344556889359642080
 GameObject:
   m_ObjectHideFlags: 0

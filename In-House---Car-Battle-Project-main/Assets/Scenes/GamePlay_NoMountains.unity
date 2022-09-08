@@ -124,6 +124,42 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!84 &16274917
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &50983316
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,14 +200,6 @@ PrefabInstance:
     - target: {fileID: 1000010765064010, guid: d4ebdc08b5dea4e85be86342b70f16f4, type: 3}
       propertyPath: m_Name
       value: Car_7F (4.2 K)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010765064010, guid: d4ebdc08b5dea4e85be86342b70f16f4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010765064010, guid: d4ebdc08b5dea4e85be86342b70f16f4, type: 3}
-      propertyPath: m_TagString
-      value: Car_AI
       objectReference: {fileID: 0}
     - target: {fileID: 4000013456260542, guid: d4ebdc08b5dea4e85be86342b70f16f4, type: 3}
       propertyPath: m_RootOrder
@@ -217,11 +245,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3328406280883742287, guid: d4ebdc08b5dea4e85be86342b70f16f4,
-        type: 3}
-      propertyPath: MaxSpeed
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7391447987720972404, guid: d4ebdc08b5dea4e85be86342b70f16f4,
         type: 3}
       propertyPath: m_Enabled
@@ -231,7 +254,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1437755341}
+      objectReference: {fileID: 16274917}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ebdc08b5dea4e85be86342b70f16f4, type: 3}
 --- !u!4 &106134230 stripped
@@ -597,6 +620,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 950f9dd3f20adc142b96a8c0510997de, type: 3}
+--- !u!84 &243951949
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &246323384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,42 +1201,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445368407}
   m_CullTransparentMesh: 1
---- !u!84 &454736793
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &458799628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,7 +2242,7 @@ MonoBehaviour:
   range: 1000
   fireRate: 1.2
   damage: 12
-  accuracy: 1.2
+  accuracy: 13
   timer: 0
   weapons:
   - {fileID: 1920400107}
@@ -2330,14 +2353,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_10A (5.7 K)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000013264169742, guid: afe89e60e06fe43e6b558ab480dbc64c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000013264169742, guid: afe89e60e06fe43e6b558ab480dbc64c, type: 3}
-      propertyPath: m_TagString
-      value: Car_AI
-      objectReference: {fileID: 0}
     - target: {fileID: 4000010392716436, guid: afe89e60e06fe43e6b558ab480dbc64c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2391,12 +2406,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1373248489}
-    - target: {fileID: 9115816023574240965, guid: afe89e60e06fe43e6b558ab480dbc64c,
-        type: 3}
-      propertyPath: MaxSpeed
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1054530512}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe89e60e06fe43e6b558ab480dbc64c, type: 3}
 --- !u!1 &918584964
@@ -2662,6 +2672,42 @@ Transform:
   m_Father: {fileID: 839451655}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!84 &1054530512
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1055905781
 GameObject:
   m_ObjectHideFlags: 0
@@ -2933,10 +2979,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI_2B (5 K) Van
       objectReference: {fileID: 0}
-    - target: {fileID: 1557598341534412, guid: 010b6e792d5db014595c20f3ac2dfd26, type: 3}
-      propertyPath: m_TagString
-      value: Car_AI
-      objectReference: {fileID: 0}
     - target: {fileID: 4448780121557134, guid: 010b6e792d5db014595c20f3ac2dfd26, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2983,24 +3025,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 20305790111091330, guid: 010b6e792d5db014595c20f3ac2dfd26,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 20305790111091330, guid: 010b6e792d5db014595c20f3ac2dfd26,
-        type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1619631543}
-    - target: {fileID: 114082226322734292, guid: 010b6e792d5db014595c20f3ac2dfd26,
-        type: 3}
-      propertyPath: MaxSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114269254526735696, guid: 010b6e792d5db014595c20f3ac2dfd26,
-        type: 3}
-      propertyPath: HP
-      value: 100
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 243951949}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 010b6e792d5db014595c20f3ac2dfd26, type: 3}
 --- !u!1 &1170861357
@@ -3400,14 +3427,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_7B (3.3 K)
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011057790652, guid: d94437dcaebba48418228acdefa25174, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011057790652, guid: d94437dcaebba48418228acdefa25174, type: 3}
-      propertyPath: m_TagString
-      value: Car_AI
-      objectReference: {fileID: 0}
     - target: {fileID: 4000011929840470, guid: d94437dcaebba48418228acdefa25174, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3461,17 +3480,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 454736793}
+      objectReference: {fileID: 1471789638}
     - target: {fileID: 1068698979623423269, guid: d94437dcaebba48418228acdefa25174,
         type: 3}
       propertyPath: m_target
       value: 
       objectReference: {fileID: 371855481}
-    - target: {fileID: 5810898934744131898, guid: d94437dcaebba48418228acdefa25174,
-        type: 3}
-      propertyPath: MaxSpeed
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d94437dcaebba48418228acdefa25174, type: 3}
 --- !u!4 &1257709043 stripped
@@ -8434,42 +8448,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1102586901}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &1373248489
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &1418793596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8578,7 +8556,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!84 &1437755341
+--- !u!84 &1471789638
 RenderTexture:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8710,42 +8688,6 @@ Transform:
   m_Father: {fileID: 372497115}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!84 &1619631543
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1637552401
 GameObject:
   m_ObjectHideFlags: 0

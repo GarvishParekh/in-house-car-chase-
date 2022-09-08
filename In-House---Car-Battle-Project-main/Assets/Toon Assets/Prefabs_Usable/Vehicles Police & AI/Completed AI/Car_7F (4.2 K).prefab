@@ -273,7 +273,7 @@ MonoBehaviour:
   LookVector: {fileID: 7304374881718592542}
   CalculatedAngle: 0
   Distance: 0
-  MaxSpeed: 110
+  MaxSpeed: 78
 --- !u!114 &7195697948505947773
 MonoBehaviour:
   m_ObjectHideFlags: 0

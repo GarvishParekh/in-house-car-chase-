@@ -15,6 +15,7 @@ ScriptsOnlyBuild:
     - DisableFlash
     - DynamicShadowProjector.DrawTargetObject
     - DynamicShadowProjector.ShadowTextureRenderer
+    - EnemyCarSpawnManager
     - FPS_Counter
     - GroundTrigger
     - InGameUiManager
@@ -129,53 +130,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 1876}
+      Script: {instanceID: 1786}
     - Class: 114
-      Script: {instanceID: 1886}
+      Script: {instanceID: 1878}
     - Class: 114
-      Script: {instanceID: 1956}
+      Script: {instanceID: 1888}
     - Class: 114
-      Script: {instanceID: 2234}
+      Script: {instanceID: 1958}
     - Class: 114
-      Script: {instanceID: 2396}
+      Script: {instanceID: 2236}
     - Class: 114
-      Script: {instanceID: 2460}
+      Script: {instanceID: 2398}
     - Class: 114
-      Script: {instanceID: 2512}
+      Script: {instanceID: 2462}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2966}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 3132}
+      Script: {instanceID: 2968}
     - Class: 114
-      Script: {instanceID: 3350}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3426}
+      Script: {instanceID: 3352}
     - Class: 114
-      Script: {instanceID: 3476}
+      Script: {instanceID: 3428}
     - Class: 114
-      Script: {instanceID: 3832}
+      Script: {instanceID: 3478}
     - Class: 114
-      Script: {instanceID: 4602}
+      Script: {instanceID: 3834}
     - Class: 114
-      Script: {instanceID: 4636}
+      Script: {instanceID: 4604}
     - Class: 114
-      Script: {instanceID: 4706}
+      Script: {instanceID: 4638}
     - Class: 114
-      Script: {instanceID: 4738}
+      Script: {instanceID: 4708}
     - Class: 114
-      Script: {instanceID: 5118}
+      Script: {instanceID: 4740}
     - Class: 114
-      Script: {instanceID: 5284}
+      Script: {instanceID: 5120}
     - Class: 114
-      Script: {instanceID: 5506}
+      Script: {instanceID: 5286}
     - Class: 114
-      Script: {instanceID: 5558}
+      Script: {instanceID: 5508}
     - Class: 114
-      Script: {instanceID: 130764}
+      Script: {instanceID: 5562}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 121
@@ -258,83 +259,85 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1686}
     - Class: 114
-      Script: {instanceID: 1788}
+      Script: {instanceID: 1790}
     - Class: 114
-      Script: {instanceID: 1824}
+      Script: {instanceID: 1826}
     - Class: 114
-      Script: {instanceID: 1856}
+      Script: {instanceID: 1858}
     - Class: 114
-      Script: {instanceID: 1876}
+      Script: {instanceID: 1878}
     - Class: 114
-      Script: {instanceID: 1946}
+      Script: {instanceID: 1948}
     - Class: 114
-      Script: {instanceID: 1956}
+      Script: {instanceID: 1958}
     - Class: 114
-      Script: {instanceID: 2148}
+      Script: {instanceID: 2150}
     - Class: 114
-      Script: {instanceID: 2386}
+      Script: {instanceID: 2388}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2716}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 2926}
+      Script: {instanceID: 2928}
     - Class: 114
-      Script: {instanceID: 2966}
+      Script: {instanceID: 2968}
     - Class: 114
-      Script: {instanceID: 3132}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3230}
+      Script: {instanceID: 3232}
     - Class: 114
-      Script: {instanceID: 3350}
+      Script: {instanceID: 3352}
     - Class: 114
-      Script: {instanceID: 3356}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 3368}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3476}
+      Script: {instanceID: 3478}
     - Class: 114
-      Script: {instanceID: 3712}
+      Script: {instanceID: 3714}
     - Class: 114
-      Script: {instanceID: 3756}
+      Script: {instanceID: 3758}
     - Class: 114
-      Script: {instanceID: 4154}
+      Script: {instanceID: 4156}
     - Class: 114
-      Script: {instanceID: 4192}
+      Script: {instanceID: 4194}
     - Class: 114
-      Script: {instanceID: 4272}
+      Script: {instanceID: 4274}
     - Class: 114
-      Script: {instanceID: 4370}
+      Script: {instanceID: 4372}
     - Class: 114
-      Script: {instanceID: 4398}
+      Script: {instanceID: 4400}
     - Class: 114
-      Script: {instanceID: 4504}
+      Script: {instanceID: 4506}
     - Class: 114
-      Script: {instanceID: 4524}
+      Script: {instanceID: 4526}
     - Class: 114
-      Script: {instanceID: 4592}
+      Script: {instanceID: 4594}
     - Class: 114
-      Script: {instanceID: 4618}
+      Script: {instanceID: 4620}
     - Class: 114
-      Script: {instanceID: 4646}
+      Script: {instanceID: 4648}
     - Class: 114
-      Script: {instanceID: 4670}
+      Script: {instanceID: 4672}
     - Class: 114
-      Script: {instanceID: 4926}
+      Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5032}
+      Script: {instanceID: 5034}
     - Class: 114
-      Script: {instanceID: 5088}
+      Script: {instanceID: 5090}
     - Class: 114
-      Script: {instanceID: 5146}
+      Script: {instanceID: 5148}
     - Class: 114
-      Script: {instanceID: 5192}
+      Script: {instanceID: 5194}
     - Class: 114
-      Script: {instanceID: 5238}
+      Script: {instanceID: 5240}
     - Class: 114
-      Script: {instanceID: 5312}
+      Script: {instanceID: 5314}
+    - Class: 114
+      Script: {instanceID: 5510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 119
@@ -405,25 +408,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 1956}
+      Script: {instanceID: 1958}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 2310}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 2966}
+      Script: {instanceID: 2968}
     - Class: 114
-      Script: {instanceID: 3350}
+      Script: {instanceID: 3352}
     - Class: 114
-      Script: {instanceID: 4582}
+      Script: {instanceID: 4584}
     - Class: 114
-      Script: {instanceID: 4650}
+      Script: {instanceID: 4652}
     - Class: 114
-      Script: {instanceID: 4698}
+      Script: {instanceID: 4700}
     - Class: 114
-      Script: {instanceID: 5024}
+      Script: {instanceID: 5026}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -539,6 +542,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: ShaderPropAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 1df282a14ea2e01c9c324f75ceb5a02a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WeaponManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1015,7 +1024,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 766289ebe818bd96fd9f1780e954c1b8
+      Hash: 7e41f113d026dcdf9bd4d254a2ed8fe0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShootingSystem
@@ -1807,10 +1816,10 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: ca683a62af70ac9675d3ac345e434734
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Suspension_LookAt
+    className: EnemyCarSpawnManager
   - hash:
       serializedVersion: 2
       Hash: 47930f3b40e24ef5b3b5e3d9ada7097a
@@ -1831,6 +1840,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Suspension_LookAt
+  - hash:
+      serializedVersion: 2
       Hash: dd7520b7d4e690e8c593273e7b9fbe80
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1841,16 +1856,9 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShowCoinsUI
-  - hash:
-      serializedVersion: 2
-      Hash: 1df282a14ea2e01c9c324f75ceb5a02a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: WeaponManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/Preloader.unity
   - Assets/Scenes/ArmoryShop.unity
   - Assets/Scenes/GamePlay_NoMountains.unity
-  playerPath: /Volumes/The Intellify/Dhaval/Projects/Garvish/Projects/Git Hub/In-House-Car-Chase/in-house-car-chase-/In-House---Car-Battle-Project-main/Builds/Car
-    Chase V0.6.apk
+  playerPath: /Volumes/The Intellify/Dhaval/Projects/Garvish/Projects/Git Hub/In-House-Car-Chase/in-house-car-chase-/In-House---Car-Battle-Project-main/Builds/7.apk

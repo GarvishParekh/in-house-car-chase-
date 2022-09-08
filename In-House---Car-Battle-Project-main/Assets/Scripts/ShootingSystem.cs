@@ -203,10 +203,10 @@ public class ShootingSystem : MonoBehaviour
     void CheckIfLookingAtTarget ()
     {
         RaycastHit ray = new RaycastHit();
-        if (Physics.Raycast(transform.position, transform.forward, out ray, Mathf.Infinity, enemyLayer))
+        if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, Mathf.Infinity))
         {
-            Debug.Log($"{ray.collider.gameObject.layer}");
-            if (ray.collider.gameObject.CompareTag ("AI_Body"))
+            Debug.Log($"Layer: {ray.collider.gameObject.layer} Tag: {ray.collider.gameObject.tag}");
+            if (ray.collider.gameObject.CompareTag ("Car_AI"))
                 canShoot = true;
             else
             {
