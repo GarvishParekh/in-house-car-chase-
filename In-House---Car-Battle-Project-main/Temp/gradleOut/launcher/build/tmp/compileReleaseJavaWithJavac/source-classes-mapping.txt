@@ -1,2 +1,0 @@
-com/AtharvaGames/CarBattleProject/BuildConfig.java
- com.AtharvaGames.CarBattleProject.BuildConfig
