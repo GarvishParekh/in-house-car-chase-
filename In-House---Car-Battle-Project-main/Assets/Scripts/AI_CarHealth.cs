@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 // This script manages
 // - AI car's health
@@ -12,13 +13,11 @@ using UnityEngine.UI;
 
 public class AI_CarHealth : MonoBehaviour 
 {
-
+	WaitForSeconds tenSeconds = new WaitForSeconds(10);
 	public static Action CarAdded;
 	public static Action<Transform> AIDestroy;
 
-
 	[Header("Display Healthbar")]
-
 	private Camera Cam;
 	public Transform HealthObj;
 	public Image HealthBar;
@@ -62,6 +61,8 @@ public class AI_CarHealth : MonoBehaviour
 	}
 
 	public Car_State CarState;
+	public GameObject shadowParent;
+
 
 	void OnEnable()
 	{
@@ -176,20 +177,35 @@ public class AI_CarHealth : MonoBehaviour
 		LookArrow.localEulerAngles = Vector3.zero;
 	}
 
+	IEnumerator destroyCar()
+	{
+		yield return tenSeconds;
+		Destroy(gameObject);
+	}
+
+	bool isDestroyed = false;
+
 	[Header("After Losing")]
 	[SerializeField] Transform objectToDequeue;
 	public void OnDamageOccur(int DmgPoints)
 	{
+		if (isDestroyed)
+			return;
 		HP -= DmgPoints;
 
 		if(HP < 0)
 		{
+			Destroy(shadowParent);
+			isDestroyed = true;
+			AIDestroy?.Invoke(objectToDequeue);
+			StartCoroutine(nameof(destroyCar));		// destroy the car after 10 seconds
 			HP = 0;
 			CA.Stop_AI_Behavior();
 			ACE.OnExplosion();
 			OnThisCarExploaded();
 			objectToDequeue.tag = "Player";
-			AIDestroy?.Invoke(objectToDequeue);
+
+			// if the car gets destroy remove it from the list of target cars
 		}
 
 		HealthBar.fillAmount = (HP / UnitHealth) * 0.01f;

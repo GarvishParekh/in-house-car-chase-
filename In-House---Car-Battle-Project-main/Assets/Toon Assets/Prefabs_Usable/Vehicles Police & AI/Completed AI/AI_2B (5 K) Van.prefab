@@ -1327,6 +1327,7 @@ MonoBehaviour:
   CalculatedAngle: 0
   Distance: 0
   MaxSpeed: 70
+  isPrefab: 1
 --- !u!114 &114269254526735696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,6 +1402,7 @@ MonoBehaviour:
   PlayerCarExploaded: 0
   ThisCarExploaded: 0
   CarState: 0
+  shadowParent: {fileID: 1176230436949668}
   objectToDequeue: {fileID: 4297330792844340}
 --- !u!114 &114200582556661230
 MonoBehaviour:

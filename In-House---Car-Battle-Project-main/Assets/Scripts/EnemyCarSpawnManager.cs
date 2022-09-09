@@ -29,20 +29,25 @@ public class EnemyCarSpawnManager : MonoBehaviour
     private void OnEnable()
     {
         AI_CarHealth.CarAdded += AddCar;
-        AI_CarHealth.AIDestroy += CheckLiveCars;
+        AI_CarHealth.AIDestroy += SpawnCars;
     }
 
     private void OnDisable()
     {
         AI_CarHealth.CarAdded -= AddCar;
-        AI_CarHealth.AIDestroy -= CheckLiveCars;
+        AI_CarHealth.AIDestroy -= SpawnCars;
     }
 
-    void SpawnCars() => SpawnFunction(gameLevel);
+    void SpawnCars(Transform t)
+    {
+        carCount--;
+        SpawnFunction(gameLevel);
+    }
 
     #region Spawn Function
     void SpawnFunction (GameLevel _level)
     {
+        Debug.Log($"Car spawned");
         if (_level == GameLevel.Easy)
         {
             int spawnType = Random.Range(0, enemyCar.level1.Length);
@@ -71,15 +76,6 @@ public class EnemyCarSpawnManager : MonoBehaviour
         }
     }
     #endregion
-
-    void CheckLiveCars (Transform t)
-    {
-        carCount--;
-        if (carCount <= 2)
-        {
-            SpawnCars();
-        }
-    }
 
     void AddCar() => carCount++;
 }

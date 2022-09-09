@@ -44,6 +44,9 @@ public class Car_AI : MonoBehaviour
 
 	public int MaxSpeed;
 
+	[SerializeField]
+	bool isPrefab = true;
+
 	void OnEnable()
 	{
 		PlayerCarHealth.OnPlayerCarExplosion += Stop_AI_Behavior;
@@ -68,11 +71,15 @@ public class Car_AI : MonoBehaviour
 
 	void Start()
 	{
-		_rb.isKinematic = true;
+		if (!isPrefab)
+		{
+			_rb.isKinematic = true;
+		}
 		if (Target == null)
 			Target = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 
+	
 	void ActivateRigidbody()
 	{
 		_rb.isKinematic = false;

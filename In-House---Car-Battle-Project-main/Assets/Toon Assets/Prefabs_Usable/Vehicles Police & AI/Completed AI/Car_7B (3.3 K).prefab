@@ -5551,6 +5551,7 @@ MonoBehaviour:
   CalculatedAngle: 0
   Distance: 0
   MaxSpeed: 75
+  isPrefab: 1
 --- !u!114 &5551344738424549698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5625,6 +5626,7 @@ MonoBehaviour:
   PlayerCarExploaded: 0
   ThisCarExploaded: 0
   CarState: 0
+  shadowParent: {fileID: 2298218146602975983}
   objectToDequeue: {fileID: 4000011929840470}
 --- !u!114 &2849550193797588632
 MonoBehaviour:
@@ -6425,7 +6427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a050537d2f844ad98abece77142c8b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_target: {fileID: 0}
+  m_target: {fileID: 4000011929840470}
   m_targetDirection: {fileID: 0}
   m_layerMask:
     serializedVersion: 2
