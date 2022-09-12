@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyCarSpawnManager : MonoBehaviour
 {
+    ScoreManager scoreInstance;
     [SerializeField] Transform[] spawnPlaces;
     [SerializeField] Transform carSpawnParent;
 
@@ -26,6 +27,11 @@ public class EnemyCarSpawnManager : MonoBehaviour
     [SerializeField] int levelIndex = 1;
     [SerializeField] int carCount = 0;
 
+    private void Start()
+    {
+        scoreInstance = ScoreManager.instance;
+    }
+
     private void OnEnable()
     {
         AI_CarHealth.CarAdded += AddCar;
@@ -41,13 +47,19 @@ public class EnemyCarSpawnManager : MonoBehaviour
     void SpawnCars(Transform t)
     {
         carCount--;
+        if (scoreInstance.level < 1)
+            gameLevel = GameLevel.Easy;
+
+        else if (scoreInstance.level > 1)
+            gameLevel = GameLevel.Medium;
+
         SpawnFunction(gameLevel);
     }
 
     #region Spawn Function
     void SpawnFunction (GameLevel _level)
     {
-        Debug.Log($"Car spawned");
+        Debug.Log($"Car spawned {gameLevel}");
         if (_level == GameLevel.Easy)
         {
             int spawnType = Random.Range(0, enemyCar.level1.Length);

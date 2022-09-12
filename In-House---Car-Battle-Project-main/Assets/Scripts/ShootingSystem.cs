@@ -21,6 +21,7 @@ public class ShootingSystem : MonoBehaviour
     public Transform muzzleFlash;               // bullet starting point
     [SerializeField] Transform weaponPlace;
     [SerializeField] Transform radiusCollider;  // radius for finding the enemy
+    [SerializeField] Vector3 hitPoint;
 
     /*
     [Header ("Sliders ref")]
@@ -206,8 +207,11 @@ public class ShootingSystem : MonoBehaviour
         if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, Mathf.Infinity))
         {
             Debug.Log($"Layer: {ray.collider.gameObject.layer} Tag: {ray.collider.gameObject.tag}");
-            if (ray.collider.gameObject.CompareTag ("Car_AI"))
+            if (ray.collider.gameObject.CompareTag("Car_AI"))
+            {
                 canShoot = true;
+                hitPoint = ray.point;
+            }
             else
             {
                 canShoot = false;
@@ -261,7 +265,7 @@ public class ShootingSystem : MonoBehaviour
             hitPosition = ray.point;
         }
         // spawn hit effect on the enemy car
-        objectPool.SpawnObject("Hit", hitPosition, Quaternion.identity, true);
+        objectPool.SpawnObject("Hit", hitPoint, Quaternion.identity, true);
 
         // spawn action lines from the weapon
         objectPool.SpawnObject("ActionLines", Vector3.zero, Quaternion.identity, true);

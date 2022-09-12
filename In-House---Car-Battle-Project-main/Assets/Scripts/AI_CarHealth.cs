@@ -17,6 +17,8 @@ public class AI_CarHealth : MonoBehaviour
 	public static Action CarAdded;
 	public static Action<Transform> AIDestroy;
 
+	[SerializeField] GameObject weapon;
+
 	[Header("Display Healthbar")]
 	private Camera Cam;
 	public Transform HealthObj;
@@ -204,6 +206,8 @@ public class AI_CarHealth : MonoBehaviour
 			ACE.OnExplosion();
 			OnThisCarExploaded();
 			objectToDequeue.tag = "Player";
+			if (weapon)
+				Destroy(weapon);
 
 			// if the car gets destroy remove it from the list of target cars
 		}

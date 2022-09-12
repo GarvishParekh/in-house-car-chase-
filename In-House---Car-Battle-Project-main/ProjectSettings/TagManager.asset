@@ -11,6 +11,7 @@ TagManager:
   - ArrowsHolder
   - FxTemporaire
   - AI_Body
+  - PlayerHealth
   layers:
   - Default
   - TransparentFX

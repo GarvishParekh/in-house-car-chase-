@@ -3,7 +3,9 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AICarExplosion
     - AI_CarHealth
+    - AI_Car_Shooting
     - ActionLinesFunction
+    - ActionLinesFunctionEnemies
     - ActivateGameplayScene
     - BasicFollow
     - BrakingEffect
@@ -26,12 +28,12 @@ ScriptsOnlyBuild:
     - MusicManager
     - MyCameraFollow
     - ObjectPooler
-    - Outline
     - ParticleExplosion
     - PlayerCarExplosion
     - PlayerCarHealth
     - PlayerCarTrigger
     - RangeFunction
+    - ScoreManager
     - ShadowFollower
     - ShootingSystem
     - ShowCoinsUI
@@ -79,7 +81,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.ScrollRect
@@ -174,8 +175,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5286}
     - Class: 114
-      Script: {instanceID: 5508}
-    - Class: 114
       Script: {instanceID: 5562}
     - Class: 115
       Script: {instanceID: 0}
@@ -250,8 +249,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1620}
-    - Class: 114
-      Script: {instanceID: 1660}
     - Class: 114
       Script: {instanceID: 1666}
     - Class: 114
@@ -338,6 +335,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5314}
     - Class: 114
       Script: {instanceID: 5510}
+    - Class: 114
+      Script: {instanceID: 347092}
+    - Class: 114
+      Script: {instanceID: 419476}
+    - Class: 114
+      Script: {instanceID: 488834}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 119
@@ -496,7 +499,7 @@ ScriptsOnlyBuild:
     className: CollisionParticles
   - hash:
       serializedVersion: 2
-      Hash: 32d65b199fdb4834609561e46bea91a3
+      Hash: 676dd3c0b4e129a57a18e056934ac29a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AI_CarHealth
@@ -544,7 +547,7 @@ ScriptsOnlyBuild:
     className: ShaderPropAnimator
   - hash:
       serializedVersion: 2
-      Hash: 1df282a14ea2e01c9c324f75ceb5a02a
+      Hash: 3bce68367c03bc001be457050686a5dc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WeaponManager
@@ -712,7 +715,7 @@ ScriptsOnlyBuild:
     className: AnalyticsTracker
   - hash:
       serializedVersion: 2
-      Hash: 5867dd6bc0f84ee44bc330c16c81d2b3
+      Hash: 24460df0e6ddd8e93d54765ad85d2916
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WeaponInfo
@@ -1024,7 +1027,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 7e41f113d026dcdf9bd4d254a2ed8fe0
+      Hash: 70007afb9479df9fda2a1bacb03b3889
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShootingSystem
@@ -1690,7 +1693,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 4de517ebfd8c0ada042e1eaf1ea5b5b5
+      Hash: 3eb65d1ca6b798373137c575deb73f70
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Car_AI
@@ -1856,9 +1859,28 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShowCoinsUI
+  - hash:
+      serializedVersion: 2
+      Hash: a9604c39eff5fdb20b20e17b8066a555
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreManager
+  - hash:
+      serializedVersion: 2
+      Hash: 7be676728a8469df79645c171226db15
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AI_Car_Shooting
+  - hash:
+      serializedVersion: 2
+      Hash: e59283617e4e94776282629848b86af1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActionLinesFunctionEnemies
   platform: 13
   scenePathNames:
   - Assets/Scenes/Preloader.unity
   - Assets/Scenes/ArmoryShop.unity
   - Assets/Scenes/GamePlay_NoMountains.unity
-  playerPath: /Volumes/The Intellify/Dhaval/Projects/Garvish/Projects/Git Hub/In-House-Car-Chase/in-house-car-chase-/In-House---Car-Battle-Project-main/Builds/7.apk
+  playerPath: /Volumes/The Intellify/Dhaval/Projects/Garvish/Projects/Git Hub/In-House-Car-Chase/in-house-car-chase-/In-House---Car-Battle-Project-main/Builds/Car
+    chase 0.11.apk

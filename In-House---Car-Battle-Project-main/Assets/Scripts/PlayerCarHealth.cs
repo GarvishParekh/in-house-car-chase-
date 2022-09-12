@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System;
+using UnityEngine.UI;
 
 public class PlayerCarHealth : MonoBehaviour 
 {
@@ -22,16 +22,19 @@ public class PlayerCarHealth : MonoBehaviour
 
 	public static Action OnPlayerCarExplosion;
 
+
 	void OnEnable()
 	{
 		PlayerCarTrigger.OnPlayerCarDamage += OnDamageOccur;
 		GroundTrigger.OnGroundHit += OnDamageOccur;
+		AI_Car_Shooting.AI_Shoot += ShootingDamage;
 	}
 
 	void OnDisable()
 	{
 		PlayerCarTrigger.OnPlayerCarDamage -= OnDamageOccur;
 		GroundTrigger.OnGroundHit -= OnDamageOccur;
+		AI_Car_Shooting.AI_Shoot -= ShootingDamage;
 	}
 
 	void Start () 
@@ -84,4 +87,9 @@ public class PlayerCarHealth : MonoBehaviour
 			OnPlayerCarExplosion();
 		}
 	}
+
+	void ShootingDamage ()
+    {
+		OnDamageOccur(3);
+    }
 }

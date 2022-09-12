@@ -6,23 +6,23 @@ using UnityEngine.EventSystems;
 
 public class WeaponInfo : MonoBehaviour, IPointerClickHandler
 {
-    public static Action<int> WeaponButtonSelected;
+    public static Action<int, int> WeaponButtonSelected;
 
     [System.Serializable]
     public class Information
     {
+        public string name;
         public int index;
         public int price;
         public bool isBought = false;
-        public TMP_Text T_price;
-        public GameObject alreadyBoughtImage;
-        public GameObject coinImage;
+        public GameObject lockImage;
 
         [Header("Image")]
         public Image buttonImage;
         
     }
 
+    public TMP_Text T_weaponName;
     public Information information;
     public Sprite normalImage;
     public Sprite highlightedImage;
@@ -41,10 +41,10 @@ public class WeaponInfo : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
-        UpdateUI();
+        UpdateUI(false);
     }
 
-    void UpdateUI ()
+    void UpdateUI (bool _justBought)
     {
         string weaponPref = $"Weapon{information.index}";
         int boughtInt = PlayerPrefs.GetInt(weaponPref, 0);
@@ -54,28 +54,24 @@ public class WeaponInfo : MonoBehaviour, IPointerClickHandler
 
         if (!information.isBought)
         {
-            information.alreadyBoughtImage.SetActive(false);
-            information.T_price.text = $"{information.price}";
-            information.coinImage.SetActive(true);
+            information.lockImage.SetActive(true);
         }
         else
         {
-            information.alreadyBoughtImage.SetActive(true);
-            information.T_price.gameObject.SetActive(false);
-            information.coinImage.SetActive(false);
+            information.lockImage.SetActive(false);
         }
-        WeaponButtonSelected?.Invoke(information.index);
+        WeaponButtonSelected?.Invoke(information.index, information.price);
     }
 
 
-    void GetNormalButton (int i)
+    void GetNormalButton (int i, int j)
     {
         information.buttonImage.sprite = normalImage;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        WeaponButtonSelected?.Invoke(information.index);
+        WeaponButtonSelected?.Invoke(information.index, information.price);
         information.buttonImage.sprite = highlightedImage;
     }
 

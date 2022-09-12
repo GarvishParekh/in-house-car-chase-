@@ -1,10 +1,11 @@
+using TMPro;
 using System;
 using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
 
-    public static Action WeaponBought;
+    public static Action<bool> WeaponBought;
 
     [SerializeField] int selectedIndex = 0;
     [SerializeField] string selectedName;
@@ -12,6 +13,7 @@ public class WeaponManager : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] GameObject B_buy;
     [SerializeField] GameObject B_equip;
+    [SerializeField] TMP_Text T_price; 
 
     [Header("Weapons")]
     [SerializeField] GameObject[] weapons;
@@ -38,9 +40,11 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
-    void OnWeaponSelceted(int _weaponIndex)
+    void OnWeaponSelceted(int _weaponIndex, int _weaponPrice)
     {
         selectedIndex = _weaponIndex;
+        Debug.Log(_weaponPrice);
+        T_price.text = $"{_weaponPrice}";
 
         // name for storing the prefab
         string weaponPref = $"Weapon{_weaponIndex}";        
@@ -67,7 +71,10 @@ public class WeaponManager : MonoBehaviour
     public void B_BuyButton ()
     {
         PlayerPrefs.SetInt(selectedName, 1);
-        WeaponBought?.Invoke();
+        WeaponBought?.Invoke(true);
+        weapons[selectedIndex].SetActive(true);
+        selectedWeapon = weapons[selectedIndex];
+
     }
 
     public void B_Equip()
