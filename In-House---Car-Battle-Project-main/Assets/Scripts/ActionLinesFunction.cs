@@ -22,11 +22,11 @@ public class ActionLinesFunction : MonoBehaviour
     }
     #endregion
 
-    private void OnShoot()
+    private void OnShoot(Vector3 hitPositon)
     {
         // set the lines position
         line.SetPosition(0, shootingInstance.muzzleFlash.position);
-        line.SetPosition(1, shootingInstance.target.position);
+        line.SetPosition(1, hitPositon);
 
         // disable the lines
         StartCoroutine(nameof(OnShootFunction));

@@ -30,13 +30,13 @@ public class WeaponInfo : MonoBehaviour, IPointerClickHandler
     private void OnEnable()
     {
         WeaponButtonSelected += GetNormalButton;
-        WeaponManager.WeaponBought += UpdateUI;
+        WeaponManager.WeaponBought += normalAIupdate;
     }
 
     void OnDisable ()
     {
         WeaponButtonSelected -= GetNormalButton;
-        WeaponManager.WeaponBought -= UpdateUI;
+        WeaponManager.WeaponBought -= normalAIupdate;
     }
 
     private void Start()
@@ -61,6 +61,24 @@ public class WeaponInfo : MonoBehaviour, IPointerClickHandler
             information.lockImage.SetActive(false);
         }
         WeaponButtonSelected?.Invoke(information.index, information.price);
+    }
+
+    void normalAIupdate(bool b)
+    {
+        string weaponPref = $"Weapon{information.index}";
+        int boughtInt = PlayerPrefs.GetInt(weaponPref, 0);
+
+        if (boughtInt == 0) information.isBought = false;
+        else information.isBought = true;
+
+        if (!information.isBought)
+        {
+            information.lockImage.SetActive(true);
+        }
+        else
+        {
+            information.lockImage.SetActive(false);
+        }
     }
 
 

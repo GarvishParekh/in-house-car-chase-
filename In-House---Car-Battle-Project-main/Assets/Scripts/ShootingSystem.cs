@@ -8,7 +8,7 @@ public class ShootingSystem : MonoBehaviour
 {
     ObjectPooler objectPool;
     public static ShootingSystem instance;
-    public static Action Shoot;
+    public static Action<Vector3> Shoot;
 
     [Space]
     //[SerializeField] TMP_Text fireRateinfo;
@@ -58,6 +58,7 @@ public class ShootingSystem : MonoBehaviour
     [Range (1f, 20f)]
     [SerializeField] float accuracy;
     [SerializeField] float timer;
+    [SerializeField] float maxRotationX;
 
     [Header("Weapons")]
     [SerializeField] GameObject[] weapons;
@@ -145,7 +146,12 @@ public class ShootingSystem : MonoBehaviour
         GetEnemy();
         if (target)
         {
+            // clamping rotation of the weapon look
             LookATarget(target.position);
+            Vector3 _rotation = transform.localEulerAngles;
+            _rotation.x = Mathf.Clamp(_rotation.x, -maxRotationX, maxRotationX);
+            transform.localEulerAngles = _rotation; 
+
             //CheckIfLookingAtTarget();
 
             CheckIfLookingAtTarget();
@@ -272,7 +278,7 @@ public class ShootingSystem : MonoBehaviour
 
         // spawn muzzle flash from the weapon
         objectPool.SpawnObject("MuzzleFlash", muzzleFlash.position, Quaternion.identity, false);
-        Shoot?.Invoke();
+        Shoot?.Invoke(hitPoint);
         target.GetComponentInParent<AI_CarHealth>().OnDamageOccur(damage);
     }
 

@@ -8,6 +8,7 @@ public class WeaponManager : MonoBehaviour
     public static Action<bool> WeaponBought;
 
     [SerializeField] int selectedIndex = 0;
+    [SerializeField] int selecterPrice = 0;
     [SerializeField] string selectedName;
 
     [Header("Buttons")]
@@ -45,6 +46,7 @@ public class WeaponManager : MonoBehaviour
         selectedIndex = _weaponIndex;
         Debug.Log(_weaponPrice);
         T_price.text = $"{_weaponPrice}";
+        selecterPrice = _weaponPrice;
 
         // name for storing the prefab
         string weaponPref = $"Weapon{_weaponIndex}";        
@@ -53,7 +55,12 @@ public class WeaponManager : MonoBehaviour
         bool _isBought = false;         // check if the weapon is bought or not 
 
         if (boughtInt == 0) _isBought = false;
-        else _isBought = true;
+        else if (boughtInt == 1) _isBought = true;
+        else if (boughtInt == 2)
+        {
+            B_equip.SetActive(false);
+            B_buy.SetActive(false);
+        }
 
         if (_isBought)
         {
@@ -72,9 +79,8 @@ public class WeaponManager : MonoBehaviour
     {
         PlayerPrefs.SetInt(selectedName, 1);
         WeaponBought?.Invoke(true);
-        weapons[selectedIndex].SetActive(true);
-        selectedWeapon = weapons[selectedIndex];
-
+        B_Equip();
+        OnWeaponSelceted(selectedIndex, selecterPrice);
     }
 
     public void B_Equip()
@@ -86,6 +92,7 @@ public class WeaponManager : MonoBehaviour
         weapons[selectedIndex].SetActive(true);
         selectedWeapon = weapons[selectedIndex];
         PlayerPrefs.SetInt("Selected Weapon", selectedIndex);
+        PlayerPrefs.SetInt(selectedName, 2);
     }
     #endregion
 
