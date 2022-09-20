@@ -6,6 +6,7 @@ public class WeaponManager : MonoBehaviour
 {
 
     public static Action<bool> WeaponBought;
+    public static Action WeaponEquiped;
 
     [SerializeField] int selectedIndex = 0;
     [SerializeField] int selecterPrice = 0;
@@ -52,15 +53,18 @@ public class WeaponManager : MonoBehaviour
         string weaponPref = $"Weapon{_weaponIndex}";        
         selectedName = weaponPref;
         int boughtInt = PlayerPrefs.GetInt(weaponPref, 0);
+        Debug.Log(boughtInt);
         bool _isBought = false;         // check if the weapon is bought or not 
 
-        if (boughtInt == 0) _isBought = false;
-        else if (boughtInt == 1) _isBought = true;
-        else if (boughtInt == 2)
+        if (boughtInt == 2)
         {
             B_equip.SetActive(false);
             B_buy.SetActive(false);
+            return;
         }
+        else if (boughtInt == 0) _isBought = false;
+        else if (boughtInt == 1) _isBought = true;
+        
 
         if (_isBought)
         {
@@ -77,6 +81,9 @@ public class WeaponManager : MonoBehaviour
     #region Button Inputs
     public void B_BuyButton ()
     {
+        if (!ShowCoinsUI.instance.CheckCoins(selecterPrice))
+            return;
+
         PlayerPrefs.SetInt(selectedName, 1);
         WeaponBought?.Invoke(true);
         B_Equip();
@@ -92,7 +99,9 @@ public class WeaponManager : MonoBehaviour
         weapons[selectedIndex].SetActive(true);
         selectedWeapon = weapons[selectedIndex];
         PlayerPrefs.SetInt("Selected Weapon", selectedIndex);
+        WeaponEquiped?.Invoke();
         PlayerPrefs.SetInt(selectedName, 2);
+        B_equip.SetActive(false);
     }
     #endregion
 

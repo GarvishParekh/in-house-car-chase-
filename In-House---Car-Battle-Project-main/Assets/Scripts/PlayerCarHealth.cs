@@ -1,9 +1,11 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerCarHealth : MonoBehaviour 
 {
+	public static Action GameOver;
+
 	public int HP;
 
 	public Image BarMain;
@@ -73,6 +75,7 @@ public class PlayerCarHealth : MonoBehaviour
 		if(HP < 0)
 		{
 			HP = 0;
+			GameOver?.Invoke();
 		}
 
 		isBarMoving = false;

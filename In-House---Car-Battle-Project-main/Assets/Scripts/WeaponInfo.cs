@@ -31,12 +31,14 @@ public class WeaponInfo : MonoBehaviour, IPointerClickHandler
     {
         WeaponButtonSelected += GetNormalButton;
         WeaponManager.WeaponBought += normalAIupdate;
+        WeaponManager.WeaponEquiped += OtherWeaponEquiped;
     }
 
     void OnDisable ()
     {
         WeaponButtonSelected -= GetNormalButton;
         WeaponManager.WeaponBought -= normalAIupdate;
+        WeaponManager.WeaponEquiped -= OtherWeaponEquiped;
     }
 
     private void Start()
@@ -100,5 +102,15 @@ public class WeaponInfo : MonoBehaviour, IPointerClickHandler
             Debug.LogWarning($"Playerpref deleted");
             PlayerPrefs.DeleteAll();
         }
+    }
+
+    void OtherWeaponEquiped ()
+    {
+        string weaponPref = $"Weapon{information.index}";
+        int boughtInt = PlayerPrefs.GetInt(weaponPref, 0);
+        if (boughtInt == 2)
+            PlayerPrefs.SetInt(weaponPref, 1);
+
+        normalAIupdate(true);
     }
 }

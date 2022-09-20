@@ -7,6 +7,7 @@ public class InGameUiManager : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject inputPanel;
     [SerializeField] GameObject nullPanel;
+    [SerializeField] GameObject settingsPanel;
 
     private GameObject currentPanel;
 
@@ -35,6 +36,12 @@ public class InGameUiManager : MonoBehaviour
         activePanel.SetActive(true);
         currentPanel = activePanel;
     }
+
+    #region Setting panel
+    public void B_OpenSettingPanel() => ChangePanel(settingsPanel);
+
+    public void B_CloseSettingPanel() => settingsPanel.SetActive(false);
+    #endregion
 
     void ChangeTime(int timeValue = 0) => Time.timeScale = timeValue;
 

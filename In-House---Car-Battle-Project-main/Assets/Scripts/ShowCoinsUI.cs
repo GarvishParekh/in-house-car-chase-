@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShowCoinsUI : MonoBehaviour 
 {
+	public static ShowCoinsUI instance;
 	[SerializeField]
 	private TextMeshProUGUI TCoins;
 
@@ -14,11 +15,16 @@ public class ShowCoinsUI : MonoBehaviour
 	private float LastShown;
 	private int AnimationSpeed;
 
-	void OnEnable()
+    private void Awake()
+    {
+		instance = this;
+    }
+
+    void OnEnable()
 	{
-		PlayerPrefs.SetInt("TotalCoins", 99999);
+		PlayerPrefs.SetInt("TotalCoins", 300);
 		PlayerPrefs.Save();
-		TotalCoins = PlayerPrefs.GetInt("TotalCoins", 99999);
+		TotalCoins = PlayerPrefs.GetInt("TotalCoins", 0);
 		LastShown = TotalCoins;
 
 		if(isPauseUI)
@@ -89,4 +95,20 @@ public class ShowCoinsUI : MonoBehaviour
 		int totalCoint = PlayerPrefs.GetInt("TotalCoins", 0);
 		TCoins.text = totalCoint.ToString();
 	}
+
+	public bool CheckCoins(int _itemAmount)
+    {
+		if (_itemAmount > TotalCoins)
+			return false;
+
+		else
+        {
+			TotalCoins -= _itemAmount;
+			PlayerPrefs.SetInt("TotalCoins", _itemAmount);
+
+			// update in UI
+			TCoins.text = TotalCoins.ToString();
+			return true;
+        }
+    }
 }

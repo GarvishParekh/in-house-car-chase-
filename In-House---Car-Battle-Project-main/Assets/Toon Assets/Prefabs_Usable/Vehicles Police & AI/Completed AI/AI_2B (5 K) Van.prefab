@@ -1340,6 +1340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0101ac75885684a9fedcd53c531ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
   HealthObj: {fileID: 4418077589096880}
   HealthBar: {fileID: 114158453730734604}
   CG: {fileID: 225345772320778032}

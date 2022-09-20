@@ -6,6 +6,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
     [Header ("Values")]
     [SerializeField] int currentScore;
+    public int vehicleDestroyedCount = 0;
     [SerializeField] int maxScore = 100;
     public int level = 1;
 
@@ -26,6 +27,7 @@ public class ScoreManager : MonoBehaviour
     void AddScore(Transform t)
     {
         currentScore += 50;
+        vehicleDestroyedCount += 1;
         T_score.text = currentScore.ToString();
         if (CheckForScore())
         {
