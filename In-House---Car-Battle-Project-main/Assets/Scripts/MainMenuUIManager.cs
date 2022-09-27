@@ -2,13 +2,20 @@ using UnityEngine;
 
 public class MainMenuUIManager : MonoBehaviour
 {
+    public static MainMenuUIManager instance;
+
     [Header ("Main Menu")]
     [SerializeField] GameObject settingPanel;
     [SerializeField] GameObject achivementPanel;
     [SerializeField] GameObject infoCanvas;
+    [SerializeField] GameObject dailyReward;
     [Space]
     [SerializeField] GameObject currentCanvas;
 
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {

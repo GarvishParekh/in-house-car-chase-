@@ -13,6 +13,8 @@ using System.Collections;
 
 public class AI_CarHealth : MonoBehaviour 
 {
+	WaitForSeconds threeSeconds = new WaitForSeconds(3);
+	[SerializeField] GameObject[] wheels;
 	WaitForSeconds tenSeconds = new WaitForSeconds(10);
 	public static Action CarAdded;
 	public static Action<Transform> AIDestroy;
@@ -197,16 +199,20 @@ public class AI_CarHealth : MonoBehaviour
 
 		if(HP < 0)
 		{
+			StartCoroutine(nameof(RemoveWheels));	// will remove wheels after few mins
+
+			// destory the shadow following the car 
 			Destroy(shadowParent);
-			isDestroyed = true;
-			AIDestroy?.Invoke(objectToDequeue);
+			isDestroyed = true;	
+			AIDestroy?.Invoke(objectToDequeue);		// to notify the queue to remove for the list 
 			StartCoroutine(nameof(destroyCar));		// destroy the car after 10 seconds
 			HP = 0;
 			CA.Stop_AI_Behavior();
 			ACE.OnExplosion();
 			OnThisCarExploaded();
 			objectToDequeue.tag = "Player";
-			if (weapon)
+			// destory the weapon if any attached to the car
+			if (weapon)		
 				Destroy(weapon);
 
 			// if the car gets destroy remove it from the list of target cars
@@ -230,4 +236,14 @@ public class AI_CarHealth : MonoBehaviour
 		ArrowTransform.gameObject.SetActive(false);
 		CG.alpha = 0;
 	}
+
+	// remove the wheels from the scene after the explosion
+	IEnumerator RemoveWheels ()
+    {
+		yield return threeSeconds;
+        for (int i = 0; i < wheels.Length; i++)
+        {
+			Destroy(wheels[i]);
+        }
+    }
 }

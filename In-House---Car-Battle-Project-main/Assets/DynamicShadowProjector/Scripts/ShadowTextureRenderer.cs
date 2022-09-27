@@ -10,7 +10,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using System.Collections.Generic;
 
-namespace DynamicShadowProjector {
+namespace DynamicShadowProjector
+{
 	[ExecuteInEditMode]
 	[DisallowMultipleComponent]
 	[RequireComponent(typeof(Projector))]

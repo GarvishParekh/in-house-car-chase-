@@ -47,5 +47,8 @@ public class RewardCardInfo : MonoBehaviour
             cardInfo.isCollected = false;
     }
 
-    public void B_RewardCollected() => RewardCollected?.Invoke();
+    public void B_RewardCollected()
+    {
+        RewardCollected?.Invoke();
+    }
 }

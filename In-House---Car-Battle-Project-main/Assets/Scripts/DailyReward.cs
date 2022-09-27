@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DailyReward : MonoBehaviour
 {
+    public static Action<int> CollectCoint;
     bool canCollect = false;
 
     [Header("Reward information")]
@@ -30,6 +32,19 @@ public class DailyReward : MonoBehaviour
             canCollect = true;
         else
             canCollect = false;
+
+        // disable all the buttons at the start
+        DisableButtons();
+    }
+
+    private void OnEnable()
+    {
+        RewardCardInfo.RewardCollected += RewardCollected;
+    }
+
+    private void OnDisable()
+    {
+        RewardCardInfo.RewardCollected -= RewardCollected;
     }
 
     private void Start()
@@ -37,9 +52,45 @@ public class DailyReward : MonoBehaviour
         if (!canCollect)
             return;
 
+        MainMenuUIManager.instance._ChangeCanvas(rewardPanel);
         // show daily reward panel
-        rewardPanel.SetActive(true);
-        // player can collect the specific date's reward 
+        // player can collect the specific date's reward
+        rewardCount = PlayerPrefs.GetInt(rewardPref, 0);
         rewardButton[rewardCount].interactable = true;
+    }
+
+    void DisableButtons ()
+    {
+        for (int i = 0; i < rewardButton.Length; i++)
+        {
+            rewardButton[i].interactable = false;
+        }
+    }
+
+    void RewardCollected ()
+    {
+        rewardCount++;
+        PlayerPrefs.SetInt(rewardPref, rewardCount);
+        DisableButtons();
+        PlayerPrefs.SetInt(datePref, currenDate);
+    }
+
+    public void B_CoinsReward (int _Coins)
+    {
+        // update in coint UI
+        CollectCoint?.Invoke(_Coins);  // add 500 coins
+    }
+
+
+
+
+    //----------------------------------------------------------
+    private void Update()
+    {
+        if (Input.GetKeyDown (KeyCode.Space))
+        {
+            PlayerPrefs.DeleteAll();
+            Debug.LogAssertion("Player pref deleted");
+        }
     }
 }

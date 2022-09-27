@@ -1,5 +1,4 @@
 ﻿using TMPro;
-using System;
 using UnityEngine;
 
 public class ShowCoinsUI : MonoBehaviour 
@@ -11,7 +10,7 @@ public class ShowCoinsUI : MonoBehaviour
 	[SerializeField]
 	public bool isPauseUI;
 
-	private int TotalCoins;
+	[SerializeField] int TotalCoins;
 	private float LastShown;
 	private int AnimationSpeed;
 
@@ -22,8 +21,6 @@ public class ShowCoinsUI : MonoBehaviour
 
     void OnEnable()
 	{
-		PlayerPrefs.SetInt("TotalCoins", 300);
-		PlayerPrefs.Save();
 		TotalCoins = PlayerPrefs.GetInt("TotalCoins", 0);
 		LastShown = TotalCoins;
 
@@ -37,12 +34,14 @@ public class ShowCoinsUI : MonoBehaviour
 		}
 
 		VehicleSelection_UI.UpdateBuyUI += UpdateCoinUI;
+		DailyReward.CollectCoint+= CollectCoins;
 	}
 
     private void OnDisable()
     {
 		VehicleSelection_UI.UpdateBuyUI -= UpdateCoinUI;
-    }
+		DailyReward.CollectCoint -= CollectCoins;
+	}
 
     void Update () 
 	{
@@ -111,4 +110,11 @@ public class ShowCoinsUI : MonoBehaviour
 			return true;
         }
     }
+
+	void CollectCoins (int _AddCoins)
+    {
+		TotalCoins += _AddCoins;
+		PlayerPrefs.SetInt("TotalCoins", TotalCoins);
+		UpdateCoinUI();
+	}
 }

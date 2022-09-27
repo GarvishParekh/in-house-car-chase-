@@ -6235,6 +6235,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0101ac75885684a9fedcd53c531ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheels:
+  - {fileID: 6737418512829867920}
+  - {fileID: 6739285170505361078}
+  - {fileID: 6738846345185306968}
+  - {fileID: 6739147598090064840}
   weapon: {fileID: 2287705362605812054}
   HealthObj: {fileID: 6740897586173493628}
   HealthBar: {fileID: 6635590152869345984}

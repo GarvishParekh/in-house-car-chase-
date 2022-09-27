@@ -212,7 +212,6 @@ public class ShootingSystem : MonoBehaviour
         RaycastHit ray = new RaycastHit();
         if (Physics.Raycast(muzzleFlash.position, transform.forward, out ray, Mathf.Infinity))
         {
-            Debug.Log($"Layer: {ray.collider.gameObject.layer} Tag: {ray.collider.gameObject.tag}");
             if (ray.collider.gameObject.CompareTag("Car_AI"))
             {
                 canShoot = true;
@@ -267,7 +266,6 @@ public class ShootingSystem : MonoBehaviour
         RaycastHit ray;
         if (Physics.Raycast(transform.position, transform.forward, out ray, Mathf.Infinity, enemyLayer))
         {
-            Debug.Log("Name:" + ray.collider.name);
             hitPosition = ray.point;
         }
         // spawn hit effect on the enemy car

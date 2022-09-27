@@ -10,6 +10,7 @@ public class EnemyCarSpawnManager : MonoBehaviour
     {
         Easy,
         Medium,
+        Hard,
         DarkSouls,
     }
 
@@ -70,6 +71,15 @@ public class EnemyCarSpawnManager : MonoBehaviour
         }
 
         else if (_level == GameLevel.Medium)
+        {
+            int spawnType = Random.Range(0, enemyCar.level2.Length);
+            int spawnPlaceCount = Random.Range(0, spawnPlaces.Length);
+
+            GameObject objectToSpawn = enemyCar.level2[spawnType];
+            Instantiate(objectToSpawn, spawnPlaces[spawnPlaceCount].position, Quaternion.identity, carSpawnParent);
+        }
+
+        else if (_level == GameLevel.Hard)
         {
             int spawnType = Random.Range(0, enemyCar.level2.Length);
             int spawnPlaceCount = Random.Range(0, spawnPlaces.Length);

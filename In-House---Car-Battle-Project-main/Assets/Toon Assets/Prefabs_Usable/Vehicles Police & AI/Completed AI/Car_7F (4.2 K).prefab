@@ -287,6 +287,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0101ac75885684a9fedcd53c531ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wheels:
+  - {fileID: 1000014158529588}
+  - {fileID: 1000013293037804}
+  - {fileID: 1000011966781662}
+  - {fileID: 1000010734864830}
+  weapon: {fileID: 0}
   HealthObj: {fileID: 3232236896445481035}
   HealthBar: {fileID: 5579643593000209405}
   CG: {fileID: 2336590358620792997}
@@ -6270,7 +6276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7578343569726937120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.76, z: 0.23}
   m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_Children:
   - {fileID: 1398786899522457526}
