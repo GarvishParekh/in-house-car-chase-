@@ -1241,8 +1241,8 @@ MonoBehaviour:
   W_Mesh_Extra1: {fileID: 0}
   W_Mesh_Extra2: {fileID: 0}
   COM_Explosion: {fileID: 4499877338846010}
-  WheelForceMultiplier: 0
-  ParticleFire: {fileID: 0}
+  WheelForceMultiplier: 0.85
+  ParticleFire: {fileID: 4284966245572947484}
   BodyParts:
   - {fileID: 23344082267108420}
   - {fileID: 23803541185912316}
@@ -2202,6 +2202,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cedd3a7b0986248bc968ea408dc6588e, type: 3}
+--- !u!198 &4284966245572947484 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5306656181034151023, guid: cedd3a7b0986248bc968ea408dc6588e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8273752116544258675}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4154062638093284286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5437098483201110477, guid: cedd3a7b0986248bc968ea408dc6588e,

@@ -4,8 +4,8 @@ ScriptsOnlyBuild:
     - AICarExplosion
     - AI_CarHealth
     - AI_Car_Shooting
-    - ActionCameraEffect
     - ActionLinesFunction
+    - ActionLinesFunctionEnemies
     - ActivateGameplayScene
     - BasicFollow
     - BrakingEffect
@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - Car_Player
     - Car_Spawner
     - CollisionParticles
+    - DailyReward
     - DeviceInput
     - DisableFlash
     - DynamicShadowProjector.DrawTargetObject
@@ -20,6 +21,7 @@ ScriptsOnlyBuild:
     - EnemyCarSpawnManager
     - FPS_Counter
     - GroundTrigger
+    - InGameSoundManager
     - InGameUiManager
     - LoadMainMenu
     - MainMenuUIManager
@@ -33,6 +35,7 @@ ScriptsOnlyBuild:
     - PlayerCarHealth
     - PlayerCarTrigger
     - RangeFunction
+    - RewardCardInfo
     - ScoreBoardManager
     - ScoreManager
     - SettingsConfig
@@ -83,6 +86,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.ScrollRect
@@ -155,33 +159,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2914}
     - Class: 114
-      Script: {instanceID: 2976}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3142}
+      Script: {instanceID: 3086}
     - Class: 114
-      Script: {instanceID: 3360}
+      Script: {instanceID: 3146}
     - Class: 114
-      Script: {instanceID: 3436}
+      Script: {instanceID: 3364}
     - Class: 114
-      Script: {instanceID: 3486}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3842}
+      Script: {instanceID: 3490}
     - Class: 114
-      Script: {instanceID: 4614}
+      Script: {instanceID: 3846}
     - Class: 114
-      Script: {instanceID: 4648}
+      Script: {instanceID: 4618}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4624}
     - Class: 114
-      Script: {instanceID: 4750}
+      Script: {instanceID: 4654}
     - Class: 114
-      Script: {instanceID: 5130}
+      Script: {instanceID: 4724}
     - Class: 114
-      Script: {instanceID: 5296}
+      Script: {instanceID: 4756}
     - Class: 114
-      Script: {instanceID: 5572}
+      Script: {instanceID: 5136}
     - Class: 114
-      Script: {instanceID: 263678}
+      Script: {instanceID: 5302}
+    - Class: 114
+      Script: {instanceID: 5524}
+    - Class: 114
+      Script: {instanceID: 5578}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 121
@@ -258,6 +266,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1666}
     - Class: 114
+      Script: {instanceID: 1670}
+    - Class: 114
       Script: {instanceID: 1678}
     - Class: 114
       Script: {instanceID: 1688}
@@ -280,6 +290,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2398}
     - Class: 114
+      Script: {instanceID: 2582}
+    - Class: 114
       Script: {instanceID: 2690}
     - Class: 114
       Script: {instanceID: 2724}
@@ -290,65 +302,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2936}
     - Class: 114
-      Script: {instanceID: 2976}
+      Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 3142}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3240}
+      Script: {instanceID: 3146}
     - Class: 114
-      Script: {instanceID: 3360}
+      Script: {instanceID: 3244}
     - Class: 114
-      Script: {instanceID: 3366}
+      Script: {instanceID: 3364}
     - Class: 114
-      Script: {instanceID: 3378}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3486}
+      Script: {instanceID: 3382}
     - Class: 114
-      Script: {instanceID: 3722}
+      Script: {instanceID: 3490}
     - Class: 114
-      Script: {instanceID: 3766}
+      Script: {instanceID: 3726}
     - Class: 114
-      Script: {instanceID: 3842}
+      Script: {instanceID: 3770}
     - Class: 114
-      Script: {instanceID: 3870}
+      Script: {instanceID: 3846}
     - Class: 114
-      Script: {instanceID: 4166}
+      Script: {instanceID: 3874}
     - Class: 114
-      Script: {instanceID: 4204}
+      Script: {instanceID: 4170}
     - Class: 114
-      Script: {instanceID: 4284}
+      Script: {instanceID: 4208}
     - Class: 114
-      Script: {instanceID: 4382}
+      Script: {instanceID: 4288}
     - Class: 114
-      Script: {instanceID: 4410}
+      Script: {instanceID: 4386}
     - Class: 114
-      Script: {instanceID: 4516}
+      Script: {instanceID: 4414}
     - Class: 114
-      Script: {instanceID: 4536}
+      Script: {instanceID: 4520}
     - Class: 114
-      Script: {instanceID: 4604}
+      Script: {instanceID: 4540}
     - Class: 114
-      Script: {instanceID: 4630}
+      Script: {instanceID: 4608}
     - Class: 114
-      Script: {instanceID: 4658}
+      Script: {instanceID: 4636}
     - Class: 114
-      Script: {instanceID: 4682}
+      Script: {instanceID: 4664}
     - Class: 114
-      Script: {instanceID: 4938}
+      Script: {instanceID: 4688}
     - Class: 114
-      Script: {instanceID: 5044}
+      Script: {instanceID: 4944}
     - Class: 114
-      Script: {instanceID: 5100}
+      Script: {instanceID: 5050}
     - Class: 114
-      Script: {instanceID: 5158}
+      Script: {instanceID: 5106}
     - Class: 114
-      Script: {instanceID: 5204}
+      Script: {instanceID: 5164}
     - Class: 114
-      Script: {instanceID: 5250}
+      Script: {instanceID: 5210}
     - Class: 114
-      Script: {instanceID: 5324}
+      Script: {instanceID: 5256}
     - Class: 114
-      Script: {instanceID: 5520}
+      Script: {instanceID: 5330}
+    - Class: 114
+      Script: {instanceID: 5526}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 119
@@ -427,17 +441,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2914}
     - Class: 114
-      Script: {instanceID: 2976}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3360}
+      Script: {instanceID: 3364}
     - Class: 114
-      Script: {instanceID: 4594}
+      Script: {instanceID: 4598}
     - Class: 114
-      Script: {instanceID: 4662}
+      Script: {instanceID: 4668}
     - Class: 114
-      Script: {instanceID: 4710}
+      Script: {instanceID: 4716}
     - Class: 114
-      Script: {instanceID: 5036}
+      Script: {instanceID: 5042}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -513,7 +527,7 @@ ScriptsOnlyBuild:
     className: SettingsConfig
   - hash:
       serializedVersion: 2
-      Hash: 676dd3c0b4e129a57a18e056934ac29a
+      Hash: 2013c81851fea96c62b53173261362ac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AI_CarHealth
@@ -843,7 +857,7 @@ ScriptsOnlyBuild:
     className: CFX_AutoRotate
   - hash:
       serializedVersion: 2
-      Hash: 7be676728a8469df79645c171226db15
+      Hash: b6e5e4f55791d95f323b4c3897bbb472
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AI_Car_Shooting
@@ -963,6 +977,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 7f0062143d31f925feb07c594298988d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InGameSoundManager
+  - hash:
+      serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -979,6 +999,12 @@ ScriptsOnlyBuild:
     assemblyName: MyBox.dll
     namespaceName: MyBox.Internal
     className: MyBoxInternalPath
+  - hash:
+      serializedVersion: 2
+      Hash: 627cd739d72cc5ee0f4dc5161a014d24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RewardCardInfo
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1533,13 +1559,19 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 351d079300e85f66f64fcdd6692bc956
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DailyReward
+  - hash:
+      serializedVersion: 2
       Hash: 08e24525e808803f109ff09bc189c67b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MotionBlurControl
   - hash:
       serializedVersion: 2
-      Hash: bf599c2e88e5e37d6270ecea3ddfee6f
+      Hash: 94baf0fc58fc18199adba0c91c43956e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenuUIManager
@@ -1755,7 +1787,7 @@ ScriptsOnlyBuild:
     className: TMP_ExampleScript_01
   - hash:
       serializedVersion: 2
-      Hash: 440a1658289a7609128d74a12569d89d
+      Hash: 405d42fda701ced92278af3fca245d30
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InGameUiManager
@@ -1893,20 +1925,14 @@ ScriptsOnlyBuild:
     className: TMP_TextEventCheck
   - hash:
       serializedVersion: 2
-      Hash: cd3182de4a7840883ea985b64d428df4
+      Hash: 45ab483d11ec1a7648798f0c2636384c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShowCoinsUI
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ActionCameraEffect
   platform: 13
   scenePathNames:
   - Assets/Scenes/Preloader.unity
   - Assets/Scenes/ArmoryShop.unity
   - Assets/Scenes/GamePlay_NoMountains.unity
   playerPath: /Volumes/The Intellify/Dhaval/Projects/Garvish/Projects/Git Hub/In-House-Car-Chase/in-house-car-chase-/In-House---Car-Battle-Project-main/Builds/Car
-    chase 0.11 (Action Camera)2.apk
+    chase 0.12.apk

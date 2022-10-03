@@ -24,7 +24,7 @@ public class InGameUiManager : MonoBehaviour
         ChangePanel(inputPanel);
     }
 
-    void ChangePanel (GameObject activePanel)
+    public void ChangePanel (GameObject activePanel)
     {
         if (currentPanel != null)
         {

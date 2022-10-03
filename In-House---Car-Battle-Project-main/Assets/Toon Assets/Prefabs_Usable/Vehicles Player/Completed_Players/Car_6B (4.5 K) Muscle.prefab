@@ -942,7 +942,7 @@ MonoBehaviour:
   W_Mesh_Extra1: {fileID: 0}
   W_Mesh_Extra2: {fileID: 0}
   COM_Explosion: {fileID: 4490082621582192}
-  WheelForceMultiplier: 0
+  WheelForceMultiplier: 0.85
   ParticleFire: {fileID: 5306656181034151023, guid: cedd3a7b0986248bc968ea408dc6588e,
     type: 3}
   BodyParts:

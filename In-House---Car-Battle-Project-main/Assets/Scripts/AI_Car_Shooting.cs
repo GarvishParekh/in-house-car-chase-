@@ -16,10 +16,10 @@ public class AI_Car_Shooting : MonoBehaviour
     [Header("Components")]
     [SerializeField] LayerMask enemyLayer;
     public Transform target;                    // enemy car to air
-    public Vector3 hitPosition;                    // enemy car to air
+    public Vector3 hitPosition;                 // enemy car to air
     public Transform muzzleFlash;               // bullet starting point
-    [SerializeField] Transform radiusCollider;  // radius for finding the enemy
     [SerializeField] Vector3 hitPoint;
+    [SerializeField] Transform actionLines;     // action lines for indicating enemy is shooting
 
     /*
     [Header ("Sliders ref")]
@@ -33,10 +33,6 @@ public class AI_Car_Shooting : MonoBehaviour
     [SerializeField] float enemyCheckTimer = 20f;
 
     [Space]
-    [Header("Config info")]
-    private Vector3 radiusVector;
-    [SerializeField] bool changeRadius = false;
-
     [Header("Weapon Config")]
     [SerializeField] bool canShoot = false;
 
@@ -65,11 +61,6 @@ public class AI_Car_Shooting : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").transform;
         objectPool = ObjectPooler.instance;
         timer = fireRate;
-
-        radiusVector.x = radius;
-        radiusVector.y = radius;
-        radiusVector.z = radius;
-        radiusCollider.localScale = radiusVector;
     }
 
     void ChangeWeaponSettings(int _weaponSelected)
@@ -98,9 +89,6 @@ public class AI_Car_Shooting : MonoBehaviour
 
     private void Update()
     {
-        if (changeRadius == true)
-            ChangeRadius(radius);
-
         /*
         damage = damageSlider.value;
         Damageinfo.text = damage.ToString();
@@ -158,14 +146,6 @@ public class AI_Car_Shooting : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, direction, accuracy * Time.deltaTime);
     }
 
-    private void ChangeRadius(float L_radius)
-    {
-        radiusVector.x = L_radius;
-        radiusVector.y = L_radius;
-        radiusVector.z = L_radius;
-        radiusCollider.localScale = radiusVector;
-    }
-
     public void _ShootFunction()
     {
         if (target)
@@ -178,7 +158,14 @@ public class AI_Car_Shooting : MonoBehaviour
         objectPool.SpawnObject("Hit", hitPoint, Quaternion.identity, true);
 
         // spawn action lines from the weapon
-        //ActionLinesPool.SpawnObject("ActionLines", Vector3.zero, Quaternion.identity, true);d
+        LineRenderer _actionLines = Instantiate(actionLines, Vector3.zero, Quaternion.identity).GetComponent<LineRenderer>();
+
+        if (_actionLines)
+        {
+            _actionLines.SetPosition(0, muzzleFlash.position);
+            _actionLines.SetPosition(1, hitPoint);
+        }
+        
 
         // spawn muzzle flash from the weapon
         objectPool.SpawnObject("MuzzleFlash", muzzleFlash.position, Quaternion.identity, false);
