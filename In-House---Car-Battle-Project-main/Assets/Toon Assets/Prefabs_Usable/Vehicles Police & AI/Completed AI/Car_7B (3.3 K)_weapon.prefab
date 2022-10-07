@@ -5632,9 +5632,9 @@ MonoBehaviour:
   CheckRate: 0.1
   PlayerCarExploaded: 0
   ThisCarExploaded: 0
+  objectToDequeue: {fileID: 4000011929840470}
   CarState: 0
   shadowParent: {fileID: 2298218146602975983}
-  objectToDequeue: {fileID: 4000011929840470}
 --- !u!114 &2849550193797588632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6259,11 +6259,11 @@ MonoBehaviour:
   target: {fileID: 0}
   hitPosition: {x: 0, y: 0, z: 0}
   muzzleFlash: {fileID: 7891221709965740912}
-  radiusCollider: {fileID: 8797951070848342069}
   hitPoint: {x: 0, y: 0, z: 0}
+  actionLines: {fileID: 896655722751194902, guid: 810602dbb9eed406e926cc2e0e18f603,
+    type: 3}
   enemyCheckRate: 20
   enemyCheckTimer: 20
-  changeRadius: 1
   canShoot: 0
   radius: 31
   range: 95

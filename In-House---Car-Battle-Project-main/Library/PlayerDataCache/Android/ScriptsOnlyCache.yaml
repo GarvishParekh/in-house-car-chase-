@@ -527,7 +527,7 @@ ScriptsOnlyBuild:
     className: SettingsConfig
   - hash:
       serializedVersion: 2
-      Hash: 2013c81851fea96c62b53173261362ac
+      Hash: 7f336700ee7d89937c569c744773c0f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AI_CarHealth
@@ -1935,4 +1935,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ArmoryShop.unity
   - Assets/Scenes/GamePlay_NoMountains.unity
   playerPath: /Volumes/The Intellify/Dhaval/Projects/Garvish/Projects/Git Hub/In-House-Car-Chase/in-house-car-chase-/In-House---Car-Battle-Project-main/Builds/Car
-    chase 0.12.apk
+    chase 0.14.apk

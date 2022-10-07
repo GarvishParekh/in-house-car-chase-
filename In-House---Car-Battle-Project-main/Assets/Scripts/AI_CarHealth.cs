@@ -57,6 +57,9 @@ public class AI_CarHealth : MonoBehaviour
 	private float FarClipPlane;
 	private AICarExplosion ACE;
 
+	[Header("After Losing")]
+	[SerializeField] Transform objectToDequeue;
+
 	public enum Car_State
 	{
 		Exploaded,
@@ -189,8 +192,7 @@ public class AI_CarHealth : MonoBehaviour
 
 	bool isDestroyed = false;
 
-	[Header("After Losing")]
-	[SerializeField] Transform objectToDequeue;
+	
 	public void OnDamageOccur(int DmgPoints)
 	{
 		if (isDestroyed)
@@ -204,12 +206,13 @@ public class AI_CarHealth : MonoBehaviour
 			// destory the shadow following the car 
 			Destroy(shadowParent);
 			isDestroyed = true;	
-			AIDestroy?.Invoke(objectToDequeue);		// to notify the queue to remove for the list 
 			StartCoroutine(nameof(destroyCar));		// destroy the car after 10 seconds
 			HP = 0;
 			CA.Stop_AI_Behavior();
 			ACE.OnExplosion();
 			OnThisCarExploaded();
+			Debug.Log(objectToDequeue.name);
+			AIDestroy?.Invoke(objectToDequeue);		// to notify the queue to remove for the list 
 			objectToDequeue.tag = "Player";
 			// destory the weapon if any attached to the car
 			if (weapon)		

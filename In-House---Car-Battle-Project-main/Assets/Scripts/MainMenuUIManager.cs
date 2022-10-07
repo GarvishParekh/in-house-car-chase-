@@ -4,13 +4,14 @@ public class MainMenuUIManager : MonoBehaviour
 {
     public static MainMenuUIManager instance;
 
+
     [Header ("Main Menu")]
     [SerializeField] GameObject settingPanel;
     [SerializeField] GameObject achivementPanel;
     [SerializeField] GameObject infoCanvas;
     [SerializeField] GameObject dailyReward;
     [Space]
-    [SerializeField] GameObject currentCanvas;
+    public GameObject currentCanvas;
 
     private void Awake()
     {

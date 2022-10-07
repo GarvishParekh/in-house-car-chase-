@@ -53,6 +53,7 @@ public class DailyReward : MonoBehaviour
             return;
 
         MainMenuUIManager.instance._ChangeCanvas(rewardPanel);
+        MainMenuUIManager.instance.currentCanvas = rewardPanel;
         // show daily reward panel
         // player can collect the specific date's reward
         rewardCount = PlayerPrefs.GetInt(rewardPref, 0);

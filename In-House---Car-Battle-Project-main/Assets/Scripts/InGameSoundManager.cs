@@ -33,7 +33,7 @@ public class InGameSoundManager : MonoBehaviour
     {
         ShootingSystem.Shoot -= PlaySound;
         PlayerCarTrigger.OnPlayerCarDamage -= CarCrashSound;
-        AI_CarHealth.AIDestroy += CarExplosion;
+        AI_CarHealth.AIDestroy -= CarExplosion;
     }
 
     void PlaySound(Vector3 v)
