@@ -15,7 +15,8 @@ public class WeaponManager : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] GameObject B_buy;
     [SerializeField] GameObject B_equip;
-    [SerializeField] TMP_Text T_price; 
+    [SerializeField] TMP_Text T_price;
+    [SerializeField] RectTransform _rectTransform;
 
     [Header("Weapons")]
     [SerializeField] GameObject[] weapons;
@@ -42,8 +43,12 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
-    void OnWeaponSelceted(int _weaponIndex, int _weaponPrice)
+    void OnWeaponSelceted(int _weaponIndex, int _weaponPrice, RectTransform _statusHolder)
     {
+        B_buy.GetComponent<RectTransform>().position = _statusHolder.position;
+        B_equip.GetComponent<RectTransform>().position = _statusHolder.position;
+
+        _rectTransform = _statusHolder;
         selectedIndex = _weaponIndex;
         Debug.Log(_weaponPrice);
         T_price.text = $"{_weaponPrice}";
@@ -87,7 +92,7 @@ public class WeaponManager : MonoBehaviour
         PlayerPrefs.SetInt(selectedName, 1);
         WeaponBought?.Invoke(true);
         B_Equip();
-        OnWeaponSelceted(selectedIndex, selecterPrice);
+        OnWeaponSelceted(selectedIndex, selecterPrice, _rectTransform);
     }
 
     public void B_Equip()

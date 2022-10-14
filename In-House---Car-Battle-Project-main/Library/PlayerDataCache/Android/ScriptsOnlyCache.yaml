@@ -575,7 +575,7 @@ ScriptsOnlyBuild:
     className: ShaderPropAnimator
   - hash:
       serializedVersion: 2
-      Hash: d83a4db276089811ec33675612010810
+      Hash: cdac3ea0b2b26b4260b1e37eec24e965
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WeaponManager
@@ -743,7 +743,7 @@ ScriptsOnlyBuild:
     className: AnalyticsTracker
   - hash:
       serializedVersion: 2
-      Hash: 24460df0e6ddd8e93d54765ad85d2916
+      Hash: 42f374ea129650909f702ab71b7828f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WeaponInfo
@@ -1935,4 +1935,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ArmoryShop.unity
   - Assets/Scenes/GamePlay_NoMountains.unity
   playerPath: /Volumes/The Intellify/Dhaval/Projects/Garvish/Projects/Git Hub/In-House-Car-Chase/in-house-car-chase-/In-House---Car-Battle-Project-main/Builds/Car
-    chase 0.14.apk
+    chase 0.15.apk

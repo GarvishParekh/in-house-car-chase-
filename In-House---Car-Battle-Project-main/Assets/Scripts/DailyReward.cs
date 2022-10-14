@@ -49,6 +49,9 @@ public class DailyReward : MonoBehaviour
 
     private void Start()
     {
+        rewardCount = PlayerPrefs.GetInt(rewardPref, 0);
+        if (rewardCount >= rewardButton.Length)
+            return;
         if (!canCollect)
             return;
 
@@ -56,7 +59,6 @@ public class DailyReward : MonoBehaviour
         MainMenuUIManager.instance.currentCanvas = rewardPanel;
         // show daily reward panel
         // player can collect the specific date's reward
-        rewardCount = PlayerPrefs.GetInt(rewardPref, 0);
         rewardButton[rewardCount].interactable = true;
     }
 

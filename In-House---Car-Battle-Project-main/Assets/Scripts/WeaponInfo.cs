@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class WeaponInfo : MonoBehaviour, IPointerClickHandler
 {
-    public static Action<int, int> WeaponButtonSelected;
+    public static Action<int, int, RectTransform> WeaponButtonSelected;
 
     [System.Serializable]
     public class Information
@@ -19,13 +19,14 @@ public class WeaponInfo : MonoBehaviour, IPointerClickHandler
 
         [Header("Image")]
         public Image buttonImage;
-        
     }
 
     public TMP_Text T_weaponName;
     public Information information;
     public Sprite normalImage;
     public Sprite highlightedImage;
+
+    [SerializeField] RectTransform statusHolder;
 
     private void OnEnable()
     {
@@ -62,7 +63,7 @@ public class WeaponInfo : MonoBehaviour, IPointerClickHandler
         {
             information.lockImage.SetActive(false);
         }
-        WeaponButtonSelected?.Invoke(information.index, information.price);
+        WeaponButtonSelected?.Invoke(information.index, information.price, statusHolder);
     }
 
     void normalAIupdate(bool b)
@@ -84,14 +85,14 @@ public class WeaponInfo : MonoBehaviour, IPointerClickHandler
     }
 
 
-    void GetNormalButton (int i, int j)
+    void GetNormalButton (int i, int j, RectTransform r)
     {
         information.buttonImage.sprite = normalImage;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        WeaponButtonSelected?.Invoke(information.index, information.price);
+        WeaponButtonSelected?.Invoke(information.index, information.price, statusHolder);
         information.buttonImage.sprite = highlightedImage;
     }
 
